@@ -12,9 +12,6 @@
 * 탐욕법(Greedy) > 체육복
 [문제](https://programmers.co.kr/learn/courses/30/lessons/42862)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/gymsuit.py)
-* 2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 헤비 유저가 소유한 장소
-[문제](https://programmers.co.kr/learn/courses/30/lessons/77487)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/havyuser.sql)
 * 정렬 > H-Index
 [문제](https://programmers.co.kr/learn/courses/30/lessons/42747)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/hindex.py)
@@ -28,3 +25,9 @@
 * 위클리 챌린지 > 부족한 금액 계산하기 
 [문제](https://programmers.co.kr/learn/courses/30/lessons/82612)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/lackmoney.py)
+
+# sql
+
+* 2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 헤비 유저가 소유한 장소
+[문제](https://programmers.co.kr/learn/courses/30/lessons/77487)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/havyuser.sql)
