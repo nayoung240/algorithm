@@ -25,6 +25,10 @@
 * 위클리 챌린지 > 부족한 금액 계산하기 
 [문제](https://programmers.co.kr/learn/courses/30/lessons/82612)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/lackmoney.py)
+* 위클리 챌린지 > 상호평가
+[문제](https://programmers.co.kr/learn/courses/30/lessons/83201)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/evaluation.py)
+
 
 # sql
 
