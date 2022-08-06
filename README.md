@@ -31,7 +31,9 @@
 * 스킬 체크 테스트 Level1 👉
 [문제](https://programmers.co.kr/skill_checks/403872)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/caldate.py)
-
+* 2019 KAKAO BLIND RECRUITMENT > 오픈채팅방 👉
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/42888)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/openchat.py)
 
 # sql
 
