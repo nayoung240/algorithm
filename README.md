@@ -37,6 +37,11 @@
 * 동적계획법(Dynamic Programming) > 정수 삼각형 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/43105)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/inttriangle.py)
+* 깊이우선탐색(DFS) 타겟 넘버 > 👉
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/43165?language=python3)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/targetnumber.py)
+
+
 
 # sql
 
