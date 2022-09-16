@@ -40,6 +40,10 @@
 * 깊이우선탐색(DFS) 타겟 넘버 > 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/43165?language=python3)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/targetnumber.py)
+* 1~1000에서 각 숫자의 개수 구하기 > 👉
+[문제](https://codingdojang.com/scode/504)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/numbercount.py)
+
 
 
 
