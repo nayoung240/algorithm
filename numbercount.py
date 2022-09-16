@@ -26,3 +26,15 @@ for i in range(0,1000):
             counts[j] = 1
     
 print(counts)
+
+
+'''
+추가 기록
+
+from collections import defaultdict
+counts = defaultdict(int) 를 사용하면 if 미리 존재하는지 체크안해도 된다.
+dictionary의 초기값은 0으로 지정되기때문이다.
+
+    for j in strarr:
+        counts[j] += 1
+'''
