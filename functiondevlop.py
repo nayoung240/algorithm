@@ -47,3 +47,38 @@ def solution(progresses, speeds):
 
     return [q[1] for q in maxx]
 
+'''
+2022.09.23 풀이
+
+deepcopy 사용한 이유: for문 돌면서 popleft하게되면 에러가 발생한다.
+
+round(): 반올림
+math.ceil(): 올림
+'''
+from collections import deque 
+import copy
+
+def solution(progresses, speeds):
+    answer = []
+    workday = deque()
+    remain = [100-i for i in progresses]
+    
+    for i, j in zip(remain, speeds):
+        workday.append(math.ceil(i/j))
+        
+    while len(workday) > 0:
+        minday = workday.popleft()
+        cnt = 1
+        
+        for i in copy.deepcopy(workday):
+            if minday >= i:
+                workday.popleft()
+                cnt += 1
+            else:
+                break
+                
+        answer.append(cnt)
+        
+    return answer
+
+
