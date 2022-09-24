@@ -43,7 +43,9 @@
 * 1~1000에서 각 숫자의 개수 구하기 > 👉
 [문제](https://codingdojang.com/scode/504)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/numbercount.py)
-
+* 스택 수열 > 👉
+[문제](https://www.acmicpc.net/problem/1874)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/stacknumber.py)
 
 
 
