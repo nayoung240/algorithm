@@ -49,7 +49,9 @@
 * 스택/큐 > 주식 가격 > 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/42584)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/stockprice.py)
-
+* 큐2 > 👉
+[문제](https://www.acmicpc.net/problem/18258)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/queue2.py)
 
 
 # sql
