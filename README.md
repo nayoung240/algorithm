@@ -51,7 +51,7 @@
 [풀이](https://github.com/nayoung240/algorithm/blob/main/stockprice.py)
 * Kth Largest Element in an Array > 👉
 [문제](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/queue2.py)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/kthlagest.py)
 
 
 ## 코딩테스트 사이트
