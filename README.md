@@ -52,6 +52,9 @@
 * Kth Largest Element in an Array > 👉
 [문제](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/kthlagest.py)
+* Kth Smallest Element in a Sorted Matrix > 👉
+[문제](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/kthsmallest.py)
 
 
 ## 코딩테스트 사이트
