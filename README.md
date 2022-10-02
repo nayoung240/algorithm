@@ -58,6 +58,9 @@
 * Group Anagrams > 👉
 [문제](https://leetcode.com/problems/group-anagrams/description/)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/groupanagram.py)
+* Letter Combinations of a Phone Number > 👉
+[문제](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/phonenumbercombination.py)
 
 
 ## 코딩테스트 사이트
