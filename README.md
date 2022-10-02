@@ -33,24 +33,40 @@
 [풀이](https://github.com/nayoung240/algorithm/blob/main/phonenumbercombination.py)
 
 
-## 탐색
+## 정렬
+* 정렬 > H-Index 👉
+[문제](https://programmers.co.kr/learn/courses/30/lessons/42747)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/hindex.py)
+
+
+## 완전 탐색
 * 완전탐색 > 카펫 👉
 [문제](https://programmers.co.kr/learn/courses/30/lessons/42842)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/carpet.py)
+
+
+## 탐욕법 (Greedy)
+* 탐욕법(Greedy) > 체육복 👉
+[문제](https://programmers.co.kr/learn/courses/30/lessons/42862)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/gymsuit.py)
+
+
+## 동적계획법 (Dynamic Programming)
+* 동적계획법(Dynamic Programming) > 정수 삼각형 👉
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/43105)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/inttriangle.py)
+
+
+## 깊이 우선 탐색 / 넓이 우선 탐색 (DFS/BFS)
 * 깊이우선탐색(DFS) 타겟 넘버 > 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/43165?language=python3)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/targetnumber.py)
 
 
+
 * 2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임 👉
 [문제](https://programmers.co.kr/learn/courses/30/lessons/64061?language=javascript)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/dolldraw.js)
-* 탐욕법(Greedy) > 체육복 👉
-[문제](https://programmers.co.kr/learn/courses/30/lessons/42862)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/gymsuit.py)
-* 정렬 > H-Index 👉
-[문제](https://programmers.co.kr/learn/courses/30/lessons/42747)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/hindex.py)
 * 2021 KAKAO BLIND RECRUITMENT > 신규 아이디 추천 👉
 [문제](https://programmers.co.kr/learn/courses/30/lessons/72410)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/newid.js)
@@ -67,9 +83,6 @@
 * 2019 KAKAO BLIND RECRUITMENT > 오픈채팅방 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/42888)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/openchat.py)
-* 동적계획법(Dynamic Programming) > 정수 삼각형 👉
-[문제](https://school.programmers.co.kr/learn/courses/30/lessons/43105)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/inttriangle.py)
 
 
 # sql
