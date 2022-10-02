@@ -31,3 +31,28 @@ def solution(id_list, report, k):
         answer.append(len(mail))
 
     return answer
+
+'''
+중복 신고 개선
+'''
+
+from collections import defaultdict
+
+def solution(id_list, report, k):
+    answer = []
+    report_history = defaultdict(list)
+    report_cnt = defaultdict(int)
+
+    for rep in set(report): # set 중복 개선
+        reparr = rep.split(' ')
+        report_history[reparr[0]].append(reparr[1])
+        report_cnt[reparr[1]] += 1
+
+    stop_id = [i for i in report_cnt if report_cnt[i] >= k]
+
+    for id in id_list:
+        # 신고했던 유저와 이용 정지 유저와 교집합
+        mail = list(set(list(report_history[id])) & set(stop_id))
+        answer.append(len(mail))
+
+    return answer
