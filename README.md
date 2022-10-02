@@ -40,6 +40,9 @@
 * 2019 KAKAO BLIND RECRUITMENT > 오픈채팅방 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/42888)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/openchat.py)
+* 2022 KAKAO BLIND RECRUITMENT > 신고 결과 받기 👉
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/92334)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/reportmail.py)
 
 
 ## 정렬
