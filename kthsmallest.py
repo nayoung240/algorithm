@@ -8,3 +8,13 @@ class Solution:
         merged = list(itertools.chain.from_iterable(matrix))
         sortarr = sorted(merged, reverse=False)
         return(sortarr[k-1])
+
+'''
+어려운 라이브러리 개선
+sum(matrix,[])
+'''
+class Solution:
+    def kthSmallest(self, matrix: List[List[int]], k: int) -> int:
+        merged = sum(matrix,[])
+        sortarr = sorted(merged, reverse=False)
+        return(sortarr[k-1])
