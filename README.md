@@ -90,14 +90,129 @@
 [문제](https://programmers.co.kr/skill_checks/403872)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/caldate.py)
 
+<br>
 
 ## sql
 * 2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 헤비 유저가 소유한 장소
 [문제](https://programmers.co.kr/learn/courses/30/lessons/77487)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/havyuser.sql)
 
+<br>
 
 ## 코딩테스트 사이트
 - 프로그래머스
 - 백준
 - leetcode
+
+<br><hr><br>
+
+# 알아두면 쓸모있는?!
+
+
+2차원 배열을 1차원 배열로 합치기
+```
+sum(matrix,[])
+```
+
+여러 그룹의 데이터를 루프를 한 번만 돌면서 병렬 처리 가능 (묶기)
+```
+zip([1,2,3],['a','b','c']) # (1,'a'),(2,'b'),(3,'c')
+```
+
+소수점
+```
+round(number) # 반올림
+
+import math
+math.ceil(number) # 올림
+```
+
+
+for문 돌면서 popleft하게되면 에러가 발생한다.
+```
+import copy
+for i in copy.deepcopy(workday):
+```
+
+deque
+- popleft() 필요할 때 효율성 높음
+```
+from collections import deque 
+workday = deque()
+```
+
+defaultdict(int) 를 사용하면 if 미리 존재하는지 체크안해도 된다.
+dictionary의 초기값은 0으로 지정되기때문이다.
+```
+for j in strarr:
+    if j in counts:
+        counts[j] += 1
+    else:
+        counts[j] = 1
+```
+```
+from collections import defaultdict
+counts = defaultdict(int)
+for j in strarr:
+    counts[j] += 1
+```
+
+개행문자까지 입력받기
+```
+sys.stdin.readline().strip()
+```
+
+리스트 요소들 사이에 sep 구분자를 넣어 출력하기  
+```
+print(*answer, sep='\n')
+```
+
+counter
+- {객체값 : counter수}
+- counter 객체 간 더하기, 빼기, 교집합, 합집합 연산 가능
+```
+import collections
+answer = collections.Counter(participant) - collections.Counter(completion)
+```
+
+정렬
+- sort(): 리스트 원본값을 수정한다, 리턴값은 None
+- sorted(): 리스트 원본값은 그대로, 리턴값은 정렬값
+
+중복제거&정렬하기
+```
+sorted(set(nums), reverse=True)
+```
+
+순열
+- permutations(): 하나의 리스트에서 모든 조합 계산(순서포함)
+```
+from itertools import permutations
+permutations(arr, 2)
+```
+
+조합
+- combinations(): 하나의 리스트에서 모든 조합 계산
+- product(): 두개 이상의 리스트에서 모든 조합 계산
+```
+from itertools import product
+combinations(arr, 2)
+product(*arr)
+```
+
+
+튜플을 문자열로 변환하기
+```
+''.join(튜플)
+```
+
+set 집합 자료형
+- 중복을 제거한다.
+- 추가: add()
+- 제거: remove()
+- 교집합: list(set(A) & set(B))
+- 합집합: list(set(A) | set(B))
+- 차집합: list(set(A) - set(B))
+
+
+윤년은 2월이 29일이다.
