@@ -1,3 +1,6 @@
+'''
+itertools.chain.from_iterable(): 2차원 배열을 1차원배열로 만들기
+'''
 import itertools
 
 class Solution:
