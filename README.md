@@ -19,7 +19,9 @@
 * 큐2 > 👉
 [문제](https://www.acmicpc.net/problem/18258)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/queue.py)
-
+* 2022 KAKAO TECH INTERNSHIP > 두 큐 합 같게 만들기 > 👉
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/118667)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/samequeue.py)
 
 ## 힙/해시
 * 해시 > 완주하지 못한 선수 👉
