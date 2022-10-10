@@ -24,3 +24,24 @@ def solution(brown, yellow):
     answer = [i, j]
 
     return answer
+
+'''
+22.10.10 다시 풀었다.
+
+풀이 포인트
+1. 최소길이는 3개가된다.
+2. 갈색 = x*y / 노란색 = (x-2)*(y-2)
+3. 길이들을 for문을 돌면서 조건이 만족할 때까지 완전탐색
+'''
+def solution(brown, yellow):
+    answer = []
+    total = brown + yellow
+    
+    for h in range(3,total+1):
+        if total % h == 0:
+            w = total/h
+            if (w - 2) * (h - 2) == yellow:
+                answer = [w,h]
+                break
+                
+    return answer
