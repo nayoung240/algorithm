@@ -28,3 +28,32 @@ def solution(numbers, target):
     global count
     dfs(0,0, numbers, target)
     return count
+
+'''
+22.10.11 풀이
+'''
+answer = 0
+tnum = 0
+
+def solution(numbers, target):
+    global tnum, answer 
+    tnum = target 
+    dfs(numbers, 0, 0)
+     
+    return answer
+    
+def dfs(numbers, idx, numsum):
+    global tnum, answer
+
+    # 탈출조건
+    if idx == len(numbers):
+        if numsum == tnum:
+            answer += 1
+        return
+    
+    # 수행동작
+    dfs(numbers, idx+1, numsum+numbers[idx])
+    dfs(numbers, idx+1, numsum-numbers[idx])
+    
+    
+    
