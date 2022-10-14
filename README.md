@@ -221,3 +221,17 @@ set 집합 자료형
 
 
 윤년은 2월이 29일이다.
+
+
+이분탐색
+```
+left, right
+while left <= right:
+    mid = (left+right)//2
+    if arr[mid] == target:
+        return mid
+    elif arr[mid] > target:
+        right = mid-1
+    else:
+        left = mid+1
+```
