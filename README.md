@@ -57,6 +57,9 @@
 * 완전탐색 > 카펫 👉
 [문제](https://programmers.co.kr/learn/courses/30/lessons/42842)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/carpet.py)
+* 이분탐색 > 입국심사 👉
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/43238)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/immigration.py)
 
 
 ## 탐욕법 (Greedy)
