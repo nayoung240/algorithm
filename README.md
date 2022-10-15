@@ -51,6 +51,10 @@
 * 정렬 > H-Index 👉
 [문제](https://programmers.co.kr/learn/courses/30/lessons/42747)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/hindex.py)
+* 정렬 > 소트인사이드 👉
+[문제](https://www.acmicpc.net/problem/1427)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/sortinside.py)
+
 
 
 ## 완전 탐색
