@@ -23,13 +23,17 @@ def solution(citations):
 
 '''
 다른 풀이
+
+if citations[i] >= article_count-i는 주어진 h번 이상 인용된 논문이 h편 이상이라는 조건을 그대로 풀어쓴 것이었다.
+citations[i]는 i번 논문이 인용된 횟수이고 article_count-i는 인용된 논문의 개수를 최댓값부터 하나씩 줄여나간 것이다. (최댓값을 찾아야 하므로 가장 큰 값부터 시작)
+그리고 리스트는 오름차순 정렬된 상태이므로 i번째 이후는 모두 i번째보다 큰 값을 가질 것이다.
 '''
 def solutionOther(citations):
-    n = len(citations)
+    article_count = len(citations)
     citations.sort()
 
-    for i in range(n):
-        if citations[i] >= n-i:
+    for i in range(article_count):
+        if citations[i] >= article_count-i:
             return n-i
 
     return 0
