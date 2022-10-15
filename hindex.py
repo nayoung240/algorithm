@@ -21,7 +21,9 @@ def solution(citations):
         else:
             n -= 1
 
-
+'''
+다른 풀이
+'''
 def solutionOther(citations):
     n = len(citations)
     citations.sort()
@@ -31,3 +33,23 @@ def solutionOther(citations):
             return n-i
 
     return 0
+
+'''
+22.10.15 다시품
+'''
+def solution(citations):
+    answer = 0
+    citations_cnt = len(citations)
+    
+    for i in range(citations_cnt, 0, -1):
+        cnt = 0
+        
+        for j in citations:
+            if i <= j:
+                cnt += 1
+        
+        if i <= cnt:
+            answer = i
+            break
+
+    return answer
