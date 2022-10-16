@@ -232,6 +232,14 @@ set 집합 자료형
 윤년은 2월이 29일이다.
 
 
+sort key lambda
+key인자에 함수를 넘겨주면 우선순위가 정해진다
+```
+d = sorted(a, key = lambda x : x[1]) 
+d = [(3, 0), (5, 1), (0, 1), (1, 2), (5, 2)]
+```
+
+
 이분탐색
 ```
 left, right
@@ -244,3 +252,77 @@ while left <= right:
     else:
         left = mid+1
 ```
+
+
+DFS
+1. 탐색 시작 노드를 스택에 삽입 후 방문처리
+2. 스택의 최상단 노드에 방문하지 않은 인접 노드가 있으면 인접 노드를 스택에 넣고 방문 처리. 방문하지 않은 인접 노드가 없으면 스택에서 최상단 노드를 꺼낸다.
+```
+def dfs(graph, v, visited):
+    # 현재 노드 방문 처리
+    visited[v] = True
+    print(v, end=' ')
+
+    # 현재 노드와 연결된 다른 노드를 재귀적으로 방문
+    for i in graph[v]:
+        if not visited[i]:
+            dfs(graph, i, visited)
+```
+
+BFS
+1. 탐색 시작 노드를 큐에 삽입하고 방문처리
+2. 큐에서 노드를 꺼내 인접 노드 중에서 방문하지 않은 노드를 모두 큐에 삽입하고 방문처리 한다.
+```
+from collections import deque
+
+def bfs(graph, start, visited):
+    queue = deque([start])
+    # node visited
+    visited[start] = True
+
+    # loop till queue is empty
+    while queue:
+        # visted node 'v' 
+        v = queue.popleft()
+        print(v, end=' ')
+
+        # v 노드에 연결된 노드들 투입 -> 방문 안한 노드만 queue에 추가
+        for i in graph[v]:
+            if not visited[i]:
+               queue.append(i)
+               # print(queue) # queue안에 뭐있나
+               visited[i] = True
+```
+
+정렬 알고리즘
+- Bubble Sort(버블정렬): 첫 원소부터 순차로 현재 원소가 그 다음 원소보다 크면 두 원소를 바꿈
+- Selection Sort(선택정렬): 배열을 선형 탐색(linear scan)하여 가장 작은 원소를 앞으로 보냄
+- Insertion Sort(삽입정렬): 적절한 위치에 삽입(insertion)하는 정렬. 필요할 때만 위치를 바꾸므로 데이터가 정렬되어있을 때는 효율적임.
+- Quick Sort(퀵정렬): 임의의 기준 대비 큰 수와 작은 수로 나누는 방식
+- Merge Sort(병합정렬): 배열을 절반씩 나누어 각각 정렬하고 합해서 다시 정렬
+
+선택 정렬
+```
+array = [2, 3, 1, 4]
+for i in range(len(array)):
+    min_index = i # index of the smallest element
+    for j in range(i+1, len(array)):
+        min_index = j
+    array[i], array[min_index] = array[min_index], array[i] # swap
+```
+
+분할정복
+```
+array = [2, 3, 1, 4]
+def quick_sort(array):
+    #quit if list has one or less elements
+    if len(array) <= 1:
+        return array
+    
+    pivot = array[0] # first element as pivot
+    tail = array[1:] # list accept pivot
+    left = [x for x in tail if x <= pivot] # left side
+    right = [x for x in tail if x > pivot] # right side
+    return quick_sort(left_side) + [pivot] + quick_sort(right_side)
+```
+
