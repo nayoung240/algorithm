@@ -54,7 +54,9 @@
 * 정렬 > 소트인사이드 👉
 [문제](https://www.acmicpc.net/problem/1427)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/sortinside.py)
-
+* 정렬 > 가장 큰 수 👉
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/42746?language=python3)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/biggestnumber.py)
 
 
 ## 완전 탐색
