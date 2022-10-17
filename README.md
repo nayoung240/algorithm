@@ -122,6 +122,18 @@
 
 # 알아두면 쓸모있는?!
 
+여러줄 입력받을 때 타임아웃 걸리지 않으려면
+```
+import sys 
+T = int(input()) 
+for i in range(T): 
+    a,b = map(int, sys.stdin.readline().split()) 
+```
+
+개행문자까지 입력받기
+```
+sys.stdin.readline().strip()
+```
 
 2차원 배열을 1차원 배열로 합치기
 ```
@@ -169,11 +181,6 @@ from collections import defaultdict
 counts = defaultdict(int)
 for j in strarr:
     counts[j] += 1
-```
-
-개행문자까지 입력받기
-```
-sys.stdin.readline().strip()
 ```
 
 리스트 요소들 사이에 sep 구분자를 넣어 출력하기  
