@@ -333,3 +333,7 @@ def quick_sort(array):
     return quick_sort(left_side) + [pivot] + quick_sort(right_side)
 ```
 
+문자열 정해진 수를 0으로 채우기
+```
+'8'.zfill(3) #008
+```
