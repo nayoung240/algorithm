@@ -87,6 +87,9 @@
 * 깊이우선탐색(DFS) 타겟 넘버 > 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/43165?language=python3)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/targetnumber.py)
+* DFS와 BFS > 👉
+[문제](https://www.acmicpc.net/problem/1260)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/dfsbfs.py)
 
 
 ## 기타
