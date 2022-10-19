@@ -268,7 +268,7 @@ DFS
 1. 탐색 시작 노드를 스택에 삽입 후 방문처리
 2. 스택의 최상단 노드에 방문하지 않은 인접 노드가 있으면 인접 노드를 스택에 넣고 방문 처리. 방문하지 않은 인접 노드가 없으면 스택에서 최상단 노드를 꺼낸다.
 
-스택으로 구현 (set, stack, root, visited)
+스택으로 구현 "set, stack, root, visited"
 ```
 graph = {1: set([3, 4]),
               2: set([3, 4, 5]),
@@ -291,6 +291,7 @@ def dfs(graph, root):
 
 dfs(graph, root)
 ```
+
 재귀로 구현
 ```
 def dfs(graph, v, visited):
@@ -303,11 +304,28 @@ def dfs(graph, v, visited):
             dfs(graph, i, visited)
 ```
 
+양방향 그래프 구현 "set, deque, root, visited, sort(reverse=True)"
+```
+def DFS(graph, root):
+    visited = []
+    stack = [root]
+
+    while stack:
+        n = stack.pop()
+        if n not in visited:
+            visited.append(n)
+            if n in graph:
+                temp = list(set(graph[n]) - set(visited))
+                temp.sort(reverse=True)
+                stack += temp
+    return " ".join(str(i) for i in visited)
+```
+
 BFS
 1. 탐색 시작 노드를 큐에 삽입하고 방문처리
 2. 큐에서 노드를 꺼내 인접 노드 중에서 방문하지 않은 노드를 모두 큐에 삽입하고 방문처리 한다.
 
-큐로 구현 (set, deque, root, visited)
+큐로 구현 "set, deque, root, visited"
 ```
 from collections import deque
 
@@ -331,6 +349,30 @@ def bfs(graph, root):
     return visited
     
 bfs(graph, root)
+```
+
+양방향 그래프 구현 "set, deque, root, visited, sort"
+```
+from collections import deque
+
+graph = {1:[2,3,4], 2:[1,4], 3:[1,4], 4:[1,2,3]}
+root = 1
+
+def BFS(graph, root):
+    visited = []
+    queue = deque([root])
+
+    while queue:
+        n = queue.popleft()
+        if n not in visited:
+            visited.append(n)
+            if n in graph:
+                temp = list(set(graph[n]) - set(visited))
+                temp.sort()
+                queue += temp
+    return " ".join(str(i) for i in visited)
+    
+BFS(graph, root)
 ```
 
 정렬 알고리즘
