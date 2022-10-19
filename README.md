@@ -264,11 +264,35 @@ while left <= right:
 DFS
 1. 탐색 시작 노드를 스택에 삽입 후 방문처리
 2. 스택의 최상단 노드에 방문하지 않은 인접 노드가 있으면 인접 노드를 스택에 넣고 방문 처리. 방문하지 않은 인접 노드가 없으면 스택에서 최상단 노드를 꺼낸다.
+
+스택으로 구현 (set, stack, root, visited)
+```
+graph = {1: set([3, 4]),
+              2: set([3, 4, 5]),
+              3: set([1, 5]),
+              4: set([1]),
+              5: set([2, 6]),
+              6: set([3, 5])}
+root = 1
+
+def dfs(graph, root):
+    visited = []
+    stack = [root]
+
+    while stack:
+        n = stack.pop()
+        if n not in visited:
+            visited.append(n)
+            stack += graph[n] - set(visited)
+    return visited
+
+dfs(graph, root)
+```
+재귀로 구현
 ```
 def dfs(graph, v, visited):
     # 현재 노드 방문 처리
     visited[v] = True
-    print(v, end=' ')
 
     # 현재 노드와 연결된 다른 노드를 재귀적으로 방문
     for i in graph[v]:
@@ -279,26 +303,31 @@ def dfs(graph, v, visited):
 BFS
 1. 탐색 시작 노드를 큐에 삽입하고 방문처리
 2. 큐에서 노드를 꺼내 인접 노드 중에서 방문하지 않은 노드를 모두 큐에 삽입하고 방문처리 한다.
+
+큐로 구현 (set, deque, root, visited)
 ```
 from collections import deque
 
-def bfs(graph, start, visited):
-    queue = deque([start])
-    # node visited
-    visited[start] = True
+graph = {1: set([3, 4]),
+              2: set([3, 4, 5]),
+              3: set([1, 5]),
+              4: set([1]),
+              5: set([2, 6]),
+              6: set([3, 5])}
+root = 1
 
-    # loop till queue is empty
+def bfs(graph, root):
+    visited = []
+    queue = deque([root])
+
     while queue:
-        # visted node 'v' 
-        v = queue.popleft()
-        print(v, end=' ')
-
-        # v 노드에 연결된 노드들 투입 -> 방문 안한 노드만 queue에 추가
-        for i in graph[v]:
-            if not visited[i]:
-               queue.append(i)
-               # print(queue) # queue안에 뭐있나
-               visited[i] = True
+        n = queue.popleft()
+        if n not in visited:
+            visited.append(n)
+            queue += graph[n] - set(visited)
+    return visited
+    
+bfs(graph, root)
 ```
 
 정렬 알고리즘
