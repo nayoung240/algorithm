@@ -125,7 +125,8 @@
 
 # 알아두면 쓸모있는?!
 
-여러줄 입력받을 때 타임아웃 걸리지 않으려면
+## ✨입출력
+### 여러줄 입력받을 때 타임아웃 걸리지 않으려면
 ```
 import sys 
 T = int(input()) 
@@ -133,65 +134,12 @@ for i in range(T):
     a,b = map(int, sys.stdin.readline().split()) 
 ```
 
-개행문자까지 입력받기
+### 개행문자까지 입력받기
 ```
 sys.stdin.readline().strip()
 ```
 
-2차원 배열을 1차원 배열로 합치기
-```
-sum(matrix,[])
-```
-
-여러 그룹의 데이터를 루프를 한 번만 돌면서 병렬 처리 가능 (묶기)
-```
-zip([1,2,3],['a','b','c']) # (1,'a'),(2,'b'),(3,'c')
-```
-
-소수점
-```
-round(number) # 반올림
-
-import math
-math.ceil(number) # 올림
-```
-
-
-for문 돌면서 popleft하게되면 에러가 발생한다.
-```
-import copy
-for i in copy.deepcopy(workday):
-```
-
-deque
-- popleft() 필요할 때 효율성 높음
-```
-from collections import deque 
-workday = deque()
-```
-
-defaultdict(int) 를 사용하면 if 미리 존재하는지 체크안해도 된다.
-dictionary의 초기값은 0으로 지정되기때문이다.
-```
-for j in strarr:
-    if j in counts:
-        counts[j] += 1
-    else:
-        counts[j] = 1
-```
-```
-from collections import defaultdict
-counts = defaultdict(int)
-for j in strarr:
-    counts[j] += 1
-```
-
-리스트 요소들 사이에 sep 구분자를 넣어 출력하기  
-```
-print(*answer, sep='\n')
-```
-
-counter
+## ✨counter
 - {객체값 : counter수}
 - counter 객체 간 더하기, 빼기, 교집합, 합집합 연산 가능
 ```
@@ -199,7 +147,15 @@ import collections
 answer = collections.Counter(participant) - collections.Counter(completion)
 ```
 
-정렬
+## ✨소수점
+```
+round(number) # 반올림
+
+import math
+math.ceil(number) # 올림
+```
+
+## ✨정렬
 - sort(): 리스트 원본값을 수정한다, 리턴값은 None
 - sorted(): 리스트 원본값은 그대로, 리턴값은 정렬값
 
@@ -208,14 +164,14 @@ answer = collections.Counter(participant) - collections.Counter(completion)
 sorted(set(nums), reverse=True)
 ```
 
-순열
+## ✨순열
 - permutations(): 하나의 리스트에서 모든 조합 계산(순서포함)
 ```
 from itertools import permutations
 permutations(arr, 2)
 ```
 
-조합
+## ✨조합
 - combinations(): 하나의 리스트에서 모든 조합 계산
 - product(): 두개 이상의 리스트에서 모든 조합 계산
 ```
@@ -224,13 +180,7 @@ combinations(arr, 2)
 product(*arr)
 ```
 
-
-튜플을 문자열로 변환하기
-```
-''.join(튜플)
-```
-
-set 집합 자료형
+## ✨set 집합 자료형
 - 중복을 제거한다.
 - 추가: add()
 - 제거: remove()
@@ -238,19 +188,14 @@ set 집합 자료형
 - 합집합: list(set(A) | set(B))
 - 차집합: list(set(A) - set(B))
 
-
-윤년은 2월이 29일이다.
-
-
-sort key lambda
+## ✨sort key lambda
 key인자에 함수를 넘겨주면 우선순위가 정해진다
 ```
 d = sorted(a, key = lambda x : x[1]) 
 d = [(3, 0), (5, 1), (0, 1), (1, 2), (5, 2)]
 ```
 
-
-이분탐색
+## ✨이분탐색
 ```
 left, right
 while left <= right:
@@ -263,12 +208,11 @@ while left <= right:
         left = mid+1
 ```
 
-
-DFS
+## ✨DFS
 1. 탐색 시작 노드를 스택에 삽입 후 방문처리
 2. 스택의 최상단 노드에 방문하지 않은 인접 노드가 있으면 인접 노드를 스택에 넣고 방문 처리. 방문하지 않은 인접 노드가 없으면 스택에서 최상단 노드를 꺼낸다.
 
-스택으로 구현 "set, stack, root, visited"
+### 스택으로 구현 "set, stack, root, visited"
 ```
 graph = {1: set([3, 4]),
               2: set([3, 4, 5]),
@@ -292,7 +236,7 @@ def dfs(graph, root):
 dfs(graph, root)
 ```
 
-재귀로 구현
+### 재귀로 구현
 ```
 def dfs(graph, v, visited):
     # 현재 노드 방문 처리
@@ -304,7 +248,7 @@ def dfs(graph, v, visited):
             dfs(graph, i, visited)
 ```
 
-양방향 그래프 구현 "set, deque, root, visited, sort(reverse=True)"
+### 양방향 그래프 구현 "set, deque, root, visited, sort(reverse=True)"
 ```
 def DFS(graph, root):
     visited = []
@@ -321,11 +265,11 @@ def DFS(graph, root):
     return " ".join(str(i) for i in visited)
 ```
 
-BFS
+## ✨BFS
 1. 탐색 시작 노드를 큐에 삽입하고 방문처리
 2. 큐에서 노드를 꺼내 인접 노드 중에서 방문하지 않은 노드를 모두 큐에 삽입하고 방문처리 한다.
 
-큐로 구현 "set, deque, root, visited"
+### 큐로 구현 "set, deque, root, visited"
 ```
 from collections import deque
 
@@ -351,7 +295,7 @@ def bfs(graph, root):
 bfs(graph, root)
 ```
 
-양방향 그래프 구현 "set, deque, root, visited, sort"
+### 양방향 그래프 구현 "set, deque, root, visited, sort"
 ```
 from collections import deque
 
@@ -375,14 +319,14 @@ def BFS(graph, root):
 BFS(graph, root)
 ```
 
-정렬 알고리즘
+## ✨정렬 알고리즘
 - Bubble Sort(버블정렬): 첫 원소부터 순차로 현재 원소가 그 다음 원소보다 크면 두 원소를 바꿈
 - Selection Sort(선택정렬): 배열을 선형 탐색(linear scan)하여 가장 작은 원소를 앞으로 보냄
 - Insertion Sort(삽입정렬): 적절한 위치에 삽입(insertion)하는 정렬. 필요할 때만 위치를 바꾸므로 데이터가 정렬되어있을 때는 효율적임.
 - Quick Sort(퀵정렬): 임의의 기준 대비 큰 수와 작은 수로 나누는 방식
 - Merge Sort(병합정렬): 배열을 절반씩 나누어 각각 정렬하고 합해서 다시 정렬
 
-선택 정렬
+## ✨선택 정렬
 ```
 array = [2, 3, 1, 4]
 for i in range(len(array)):
@@ -392,7 +336,7 @@ for i in range(len(array)):
     array[i], array[min_index] = array[min_index], array[i] # swap
 ```
 
-분할정복
+## ✨분할정복
 ```
 array = [2, 3, 1, 4]
 def quick_sort(array):
@@ -407,7 +351,60 @@ def quick_sort(array):
     return quick_sort(left_side) + [pivot] + quick_sort(right_side)
 ```
 
-문자열 정해진 수를 0으로 채우기
+## ✨기타
+
+### 2차원 배열을 1차원 배열로 합치기
+```
+sum(matrix,[])
+```
+
+### 여러 그룹의 데이터를 루프를 한 번만 돌면서 병렬 처리 가능 (묶기)
+```
+zip([1,2,3],['a','b','c']) # (1,'a'),(2,'b'),(3,'c')
+```
+
+### for문 돌면서 popleft하게되면 에러가 발생한다.
+```
+import copy
+for i in copy.deepcopy(workday):
+```
+
+### deque
+- popleft() 필요할 때 효율성 높음
+```
+from collections import deque 
+workday = deque()
+```
+
+### defaultdict(int) 를 사용하면 if 미리 존재하는지 체크안해도 된다.
+- dictionary의 초기값은 0으로 지정되기때문이다.
+```
+for j in strarr:
+    if j in counts:
+        counts[j] += 1
+    else:
+        counts[j] = 1
+```
+```
+from collections import defaultdict
+counts = defaultdict(int)
+for j in strarr:
+    counts[j] += 1
+```
+
+### 리스트 요소들 사이에 sep 구분자를 넣어 출력하기  
+```
+print(*answer, sep='\n')
+```
+
+### 튜플을 문자열로 변환하기
+```
+''.join(튜플)
+```
+
+### 윤년은 2월이 29일이다.
+
+### 문자열 정해진 수를 0으로 채우기
 ```
 '8'.zfill(3) #008
 ```
