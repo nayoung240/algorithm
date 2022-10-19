@@ -139,6 +139,31 @@ for i in range(T):
 sys.stdin.readline().strip()
 ```
 
+## ✨map(function, iterable)
+
+### map을 사용하지 않으면 for문으로 번거로움
+```
+myList = [1, 2, 3, 4, 5]
+
+# for 반복문 이용
+result1 = []
+for val in myList:
+    result1.append(val + 1)
+```
+### map을 사용할 때
+```
+myList = [1, 2, 3, 4, 5]
+
+def add_one(n):
+    return n + 1
+
+result2 = list(map(add_one, myList))  # map반환을 list 로 변환
+```
+### map, lamda 함수(이름없는 함수) 이용
+```
+result2 = list(map(lambda x: x * 2, [5, 4, 3, 2, 1]))
+```
+
 ## ✨counter
 - {객체값 : counter수}
 - counter 객체 간 더하기, 빼기, 교집합, 합집합 연산 가능
@@ -156,12 +181,28 @@ math.ceil(number) # 올림
 ```
 
 ## ✨정렬
-- sort(): 리스트 원본값을 수정한다, 리턴값은 None
+- sort(): 리스트 원본값을 수정한다, 리턴값은 None (sorted 보다 조금 빠르다)
 - sorted(): 리스트 원본값은 그대로, 리턴값은 정렬값
 
-중복제거&정렬하기
+### 중복제거&정렬하기
 ```
 sorted(set(nums), reverse=True)
+```
+
+### lamda 인자 : 표현식 
+- key인자에 정렬해줄 값을 넘겨주면 정렬된다 
+
+### list[1]을 기준으로 정렬
+```
+sorted(a, key = lambda x : x[1]) # [(3, 0), (5, 1), (0, 1), (1, 2), (5, 2)]
+```
+### 문자열 길이를 기준으로 정렬
+```
+sorted(list, key=lambda x : len(x)) # ['is', 'my', 'name', 'song']
+```
+### 제일 큰 수 만들기
+```
+list.sort(key=lambda x:str(x)*3, reverse=True)
 ```
 
 ## ✨순열
@@ -188,12 +229,6 @@ product(*arr)
 - 합집합: list(set(A) | set(B))
 - 차집합: list(set(A) - set(B))
 
-## ✨sort key lambda
-key인자에 함수를 넘겨주면 우선순위가 정해진다
-```
-d = sorted(a, key = lambda x : x[1]) 
-d = [(3, 0), (5, 1), (0, 1), (1, 2), (5, 2)]
-```
 
 ## ✨이분탐색
 ```
@@ -408,3 +443,5 @@ print(*answer, sep='\n')
 ```
 '8'.zfill(3) #008
 ```
+
+
