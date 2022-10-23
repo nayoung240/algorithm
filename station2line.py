@@ -2,6 +2,9 @@
 참고 https://data-flower.tistory.com/105
 푸는 방법이 다양하지만. dfs와 bfs를 이용해서 푸는 풀이법
 어려움
+
+필요개념
+- 순환그래프 (dfs)
 '''
 
 import sys
