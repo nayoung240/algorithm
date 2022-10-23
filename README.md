@@ -90,6 +90,9 @@
 * DFS와 BFS > 👉
 [문제](https://www.acmicpc.net/problem/1260)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/dfsbfs.py)
+* 서울 지하철 2호선 > 👉
+[문제](https://www.acmicpc.net/problem/16947)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/station2line.py)
 
 
 ## 기타
