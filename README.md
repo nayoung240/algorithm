@@ -303,6 +303,19 @@ def DFS(graph, root):
     return " ".join(str(i) for i in visited)
 ```
 
+### 사이클 찾기
+```
+stack = [0]
+while stack:
+    n = stack.pop()
+    for i in adj[n]:
+        if not i in visited:
+            stack.append(i)
+    visited.append(n)
+return visited
+# visited에 중복된 노드가 있을 경우 사이클이 존재한다고 판단!
+```
+
 ## ✨BFS
 1. 탐색 시작 노드를 큐에 삽입하고 방문처리
 2. 큐에서 노드를 꺼내 인접 노드 중에서 방문하지 않은 노드를 모두 큐에 삽입하고 방문처리 한다.
