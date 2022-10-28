@@ -1,3 +1,7 @@
+'''
+DFS, BFS로 풀이가 가능하다
+나는 재귀를 사용하였다.
+'''
 class Solution:
     def numsSameConsecDiff(self, n: int, k: int) -> List[int]:
         answer = []
