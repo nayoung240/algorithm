@@ -93,6 +93,9 @@
 * 서울 지하철 2호선 > 👉
 [문제](https://www.acmicpc.net/problem/16947)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/station2line.py)
+* Numbers With Same Consecutive Differences > 👉
+[문제](https://leetcode.com/problems/numbers-with-same-consecutive-differences/)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/samediffnum.py)
 
 
 ## 기타
