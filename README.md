@@ -417,6 +417,33 @@ return visited
 # visited에 중복된 노드가 있을 경우 사이클이 존재한다고 판단!
 ```
 
+## ✨백트래킹 backtracking
+원하는 값과 불일치 하는 부분이 있으면 더이상 탐색하지 않고 전 단계로 돌아간다.
+- Promising: 트리구조 기반으로 DFS 탐색하면서 조건에 부합하는지 체크
+- Pruning: 조건에 맞지 않는 노드는 가지치키한다.
+ex) 미로 찾기 (트리 탐색 문제로 해석), n-queens
+
+```
+n, m = map(int, input().split())
+visited = [False] * (n+1)
+answer = []
+
+def dfs(depth, n, m):
+  if depth == m:
+    print(' '.join(map(str, answer)))
+
+  for i in range(1, n+1):
+    # 방문하지 않았을 경우
+    if not visited[i]:
+      visited[i] = True
+      answer.append(i)
+      dfs(depth+1, n, m) # depth 1 증가, 다음 노드
+      visited[i] = False
+      answer.pop()
+
+dfs(0, n, m)
+```
+
 ## ✨BFS
 1. 탐색 시작 노드를 큐에 삽입하고 방문처리
 2. 큐에서 노드를 꺼내 인접 노드 중에서 방문하지 않은 노드를 모두 큐에 삽입하고 방문처리 한다.
