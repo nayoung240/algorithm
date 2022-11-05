@@ -220,10 +220,15 @@ permutations(arr, 2)
 
 ## ✨조합
 - combinations(): 하나의 리스트에서 모든 조합 계산
+```
+import itertools
+
+a = itertools.combinations([2,1,3], 2)
+print(list(a)) # [(2,1),(2,3),(1,3)]
+```
 - product(): 두개 이상의 리스트에서 모든 조합 계산
 ```
 from itertools import product
-combinations(arr, 2)
 product(*arr)
 ```
 
