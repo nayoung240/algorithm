@@ -81,7 +81,7 @@
 * 동적계획법(Dynamic Programming) > N으로 표현 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/42895)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/nreturn.py)
-* 동적계획법(Dynamic Programming) > N으로 표현 👉
+* 동적계획법(Dynamic Programming) > 도둑질 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/42897)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/thievery.py)
 
