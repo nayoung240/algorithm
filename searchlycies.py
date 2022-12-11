@@ -30,47 +30,89 @@ def solution(words, queries):
 '''
 트라이 구조를 이용한 풀이
 '''
-def make_trie(words, reverse):
-    dic = {}
+class Trie:
+    def __init__(self, val, depth=0):
+        self.child = {}
+        self.num = {}
+        self.val = val
+        self.depth = depth
+
+    def push(self, word):
+        node = self
+        while len(word) > 0:
+            node.num[len(word)] = node.num.get(len(word), 0) + 1
+            if word[0] not in node.child:
+                node.child[word[0]] = Trie(word[0], node.depth + 1)
+            node = node.child[word[0]]
+            word = word[1:]
+
+
+    def search(self, word):
+        node = self
+        while len(word) > 0:
+            if word[0] == '?':
+                return node.num.get(len(word), 0)
+            if word[0] not in node.child:
+                return 0
+            node = node.child[word[0]]
+            word = word[1:]
+
+    def __repr__(self):
+        return 'num: {}; val: {};'.format(str(self.num), self.val)
+
+def solution(words, queries):
+    answer = []
+    t1 = Trie('')
+    t2 = Trie('')
     for word in words:
-        dic.setdefault(len(word), {})
-        current_dic = dic[len(word)]
+        t1.push(word)
+        t2.push(word[::-1])
 
-        if reverse:
-            word = word[::-1]
+    for query in queries:
+        if query[0] != '?':
+            val = t1.search(query)
+        else:
+            val = t2.search(query[::-1])
+        answer.append(val)
+    return answer
 
-        for letter in word:
-            current_dic.setdefault(letter, [0, {}])
-            current_dic[letter][0] += 1
-            current_dic = current_dic[letter][1]
-            
-    return dic
+'''
+이진탐색 풀이
+'''
 
-def count(query, new_query, cur_dic):
-    if len(query) not in cur_dic.keys():
-        return 0
+from collections import defaultdict
+from bisect import bisect_left, bisect_right
 
-    current_dic = cur_dic[len(query)]
-    for letter in new_query:
-        if letter not in current_dic.keys():
-            return 0
-
-        current_dic = current_dic[letter][1]
-        
-    return sum([v[0] for k, v in current_dic.items()])
+def count_by_lange(lst, start, end):
+    return bisect_right(lst, end) - bisect_left(lst, start)
     
 def solution(words, queries):
     answer = []
-    dic = make_trie(words, False)
-    reverse_dic = make_trie(words, True)
     
+    cands = defaultdict(list)
+    reverse_cands = defaultdict(list)
+    
+    # 길이별 저장
+    for word in words:
+        cands[len(word)].append(word)
+        reverse_cands[len(word)].append(word[::-1])
+    
+    # 정렬 O(NlogN)
+    for cand in cands.values():
+        cand.sort()
+    for cand in revserse_cands.values():
+        cand.sort()
+    
+    # 탐색 O(N*logM)
     for query in queries:
-        new_query = query.replace('?', '')
+        # 접두사
         if query[0] == '?':
-            temp = count(query, new_query[::-1], reverse_dic)
-            answer.append(temp)
+            lst = reverse_cands[len(query)]
+            start, end = query[::-1].replace('?', 'a'), query[::-1].replace('?', 'z')
+        # 접미사
         else:
-            temp = count(query, new_query, dic)
-            answer.append(temp)
+            lst = cands[len(query)]
+            start, end = query.replace('?', 'a'), query.replace('?', 'z')
+        answer.append(count_by_lange(lst, start, end))
         
     return answer
