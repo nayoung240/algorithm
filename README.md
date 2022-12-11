@@ -63,9 +63,14 @@
 * 완전탐색 > 카펫 👉
 [문제](https://programmers.co.kr/learn/courses/30/lessons/42842)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/carpet.py)
+
+## 이분 탐색
 * 이분탐색 > 입국심사 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/43238)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/immigration.py)
+* 2020 KAKAO BLIND RECRUITMENT > 가사 검색 👉
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/60060?language=python3)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/searchlycies.py)
 
 
 ## 탐욕법 (Greedy)
@@ -357,6 +362,16 @@ while left <= right:
     else:
         left = mid+1
 ```
+
+### bisect_left(a, x)
+- 정렬된 a에 x를 삽입할 위치를 리턴한다.
+- x가 이미 있으면 x위치의 앞 위치를 리턴한다.
+
+### bisect_right(a, x)
+- x가 이미 있으면 x위치의 뒤 위치를 반환한다.
+
+=> 값이 없을 때는 같은 값 리턴
+=> 값이 있을 때 왼쪽을 리턴할지 vs 오른쪽을 리턴할지 차이
 
 ## ✨DFS
 1. 탐색 시작 노드를 스택에 삽입 후 방문처리
