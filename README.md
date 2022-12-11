@@ -22,6 +22,11 @@
 * 2022 KAKAO TECH INTERNSHIP > 두 큐 합 같게 만들기 > 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/118667)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/samequeue.py)
+* 스택/큐 > 다리를 지나는 트럭 > 👉
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/42583)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/bridge_truck.py)
+
+
 
 ## 힙/해시
 * 해시 > 완주하지 못한 선수 👉
