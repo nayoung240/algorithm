@@ -1,3 +1,8 @@
+'''
+틀렸던 부분
+트럭이 지나가는데 bridge_length 만큼 시간만큼 소요되는 점을 놓쳤다. 1초만에 완료되는 줄 알았다.
+근데 알았는데도 구현에 실패했다.
+'''
 from collections import deque
 
 def solution(bridge_length, weight, truck_weights):
