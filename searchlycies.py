@@ -78,41 +78,41 @@ def solution(words, queries):
 
 '''
 이진탐색 풀이
+- bisect_left, bisect_right를 count by range
+- 와일드카드 문자는 접두사 아니면 접미사에 있으므로 => 접두사인경우 단어를 뒤집어 저장 
 '''
+import bisect
 
-from collections import defaultdict
-from bisect import bisect_left, bisect_right
+# 값이 [left_val, right_val] 데이터의 개수를 반환하는 함수
+def count_by_range(a, left_val, right_val):
+    right_index = bisect.bisect_right(a, right_val)
+    left_index = bisect.bisect_left(a, left_val)
+    return right_index - left_index
 
-def count_by_lange(lst, start, end):
-    return bisect_right(lst, end) - bisect_left(lst, start)
-    
+arr = [[] for _ in range(10001)]
+reversed_arr = [[] for _ in range(10001)]
+
 def solution(words, queries):
     answer = []
-    
-    cands = defaultdict(list)
-    reverse_cands = defaultdict(list)
-    
-    # 길이별 저장
+
+    # 단어의 길이별로 저장, ?가 접미사냐 접두사냐에 따라 저장한다.
+    # 접두사인경우 뒤집어서 저장한다.
     for word in words:
-        cands[len(word)].append(word)
-        reverse_cands[len(word)].append(word[::-1])
+        arr[len(word)].append(word)
+        reversed_arr[len(word)].append(word[::-1])
     
-    # 정렬 O(NlogN)
-    for cand in cands.values():
-        cand.sort()
-    for cand in revserse_cands.values():
-        cand.sort()
-    
-    # 탐색 O(N*logM)
-    for query in queries:
-        # 접두사
-        if query[0] == '?':
-            lst = reverse_cands[len(query)]
-            start, end = query[::-1].replace('?', 'a'), query[::-1].replace('?', 'z')
-        # 접미사
+    # 이진 탐색을 위해 각 길이별 단어 리스트를 정렬한다.
+    for i in range(10001):
+        arr[i].sort()
+        reversed_arr[i].sort()
+
+    for x in queries:
+        if x[0] != '?':
+            # ___a ~ ___z 까지의 단어 갯수를 찾음
+            result = count_by_range(arr[len(x)], x.replace('?', 'a'), x.replace('?', 'z'))
         else:
-            lst = cands[len(query)]
-            start, end = query.replace('?', 'a'), query.replace('?', 'z')
-        answer.append(count_by_lange(lst, start, end))
-        
+            result = count_by_range(reversed_arr[len(x)], x[::-1].replace('?', 'a'), x[::-1].replace('?', 'z'))
+
+        answer.append(result)
+
     return answer
