@@ -97,6 +97,9 @@
 * Unique Paths 👉
 [문제](https://leetcode.com/problems/unique-paths/)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/uniquepath.py)
+* 연속 부분 수열 합의 개수 👉
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/131701?language=python3)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/circlesum.py)
 
 
 ## 깊이 우선 탐색 / 넓이 우선 탐색 (DFS/BFS)
@@ -581,6 +584,17 @@ def quick_sort(array):
     right = [x for x in tail if x > pivot] # right side
     return quick_sort(left_side) + [pivot] + quick_sort(right_side)
 ```
+
+## 최대 연속 부분 수열의 합
+- 개념: 연속된 원소를 더한 부분 수열의 최대값
+
+### 알고리즘
+- 현재 합
+- 합의 최댓값
+1. 수의 합을 반복적으로 구한다.
+2. 이 때 합이 음수이면 현재 합은 0이되고 그 다음 수부터 다시 시작한다.
+3. 합의 최댓값을 도출한다.
+
 
 ## ✨기타
 
