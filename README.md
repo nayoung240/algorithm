@@ -69,6 +69,7 @@
 [문제](https://programmers.co.kr/learn/courses/30/lessons/42842)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/carpet.py)
 
+
 ## 이분 탐색
 * 이분탐색 > 입국심사 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/43238)
@@ -76,6 +77,9 @@
 * 2020 KAKAO BLIND RECRUITMENT > 가사 검색 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/60060?language=python3)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/searchlycies.py)
+* 예산 👉
+[문제](https://www.acmicpc.net/problem/2512)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/budget.py)
 
 
 ## 탐욕법 (Greedy)
@@ -362,16 +366,22 @@ for i in range(1, len(distance)):
 ```
 
 ## ✨이분탐색
+
+탐색 범위를 절반으로 줄여가면서 원하는 숫자(target)를 찾기
+- 배열안의 값은 반드시 정렬되어있어야 한다.
 ```
-left, right
+left, right = 0, max(arr)
+
 while left <= right:
-    mid = (left+right)//2
+    mid = (left + right)//2
     if arr[mid] == target:
         return mid
     elif arr[mid] > target:
         right = mid-1
     else:
         left = mid+1
+
+return -1 #찾지 못했을 때
 ```
 
 ### bisect_left(a, x)
