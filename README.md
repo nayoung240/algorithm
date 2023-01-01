@@ -168,7 +168,14 @@ for i in range(T):
 
 ### 개행문자까지 입력받기
 ```
+import sys
 sys.stdin.readline().strip()
+```
+
+### 분리하여 입력받기
+```
+import sys
+n = list(map(int, sys.stdin.readline().split()))
 ```
 
 ## ✨map(function, iterable)
