@@ -676,4 +676,19 @@ print(*answer, sep='\n')
 '8'.zfill(3) #008
 ```
 
+### 2진수, 8진수, 16진수 변환
+```
+format(N, 'b') # 2진수 Binary format
+format(N, 'o') # 8진수 Octal format
+format(N, 'x') # 16진수 Hexadecimal format
+```
+
+### 특정 문자열에서 찾는 문자열의 모든 인덱스 찾기
+- finditer(패턴, 문자열, 플래그)
+```
+for text in re.finditer('1', binaryNum):
+    now = text.start()
+```
+
+
 
