@@ -215,7 +215,7 @@ result2 = list(map(lambda x: x * 2, [5, 4, 3, 2, 1]))
 ```
 
 ## ✨counter
-- {객체값 : counter수}
+- return {객체값 : counter수}
 - counter 객체 간 더하기, 빼기, 교집합, 합집합 연산 가능
 ```
 import collections
