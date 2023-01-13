@@ -139,6 +139,12 @@
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/77486?language=python3)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/pyramid.py)
 
+
+## 성능
+* OddOccurrencesInArray 👉
+[문제](https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/start/)
+[풀이](https://github.com/nayoung240/algorithm/blob/main/oddinarray.py)
+
 <br>
 
 ## sql
@@ -150,8 +156,13 @@
 
 ## 코딩테스트 사이트
 - 프로그래머스
-- 백준
+ - 장점: 회사 기출 문제 모음 제공, 온라인 IDE 제공, 테스트케이스 추가 가능
+- 백준 
+ - 장점: 다양한 문제, 많은 풀이
 - leetcode
+ - 장점: 영어문제, 온라인 IDE 제공 
+- codility
+ - 장점: 영어문제, 온라인 IDE 제공, 성능시간 분석 제공 
 
 <br><hr><br>
 
