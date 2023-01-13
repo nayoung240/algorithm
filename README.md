@@ -631,6 +631,11 @@ import copy
 for i in copy.deepcopy(workday):
 ```
 
+### 리스트 맨앞에 요소 추가하기 - insert( )
+```
+arr.insert(0, tmp)
+```
+
 ### deque
 - popleft() 필요할 때 효율성 높음
 ```
