@@ -156,13 +156,13 @@
 
 ## 코딩테스트 사이트
 - 프로그래머스
- - 장점: 회사 기출 문제 모음 제공, 온라인 IDE 제공, 테스트케이스 추가 가능
+  - 장점: 회사 기출 문제 모음 제공, 온라인 IDE 제공, 테스트케이스 추가 가능
 - 백준 
- - 장점: 다양한 문제, 많은 풀이
+  - 장점: 다양한 문제, 많은 풀이
 - leetcode
- - 장점: 영어문제, 온라인 IDE 제공 
+  - 장점: 영어문제, 온라인 IDE 제공 
 - codility
- - 장점: 영어문제, 온라인 IDE 제공, 성능시간 분석 제공 
+  - 장점: 영어문제, 온라인 IDE 제공, 성능시간 분석 제공 
 
 <br><hr><br>
 
@@ -215,8 +215,10 @@ result2 = list(map(lambda x: x * 2, [5, 4, 3, 2, 1]))
 ```
 
 ## ✨counter
-- return {객체값 : counter수}
+- return dictionary형 {객체값 : counter수}
 - counter 객체 간 더하기, 빼기, 교집합, 합집합 연산 가능
+- 시간 복잡도: O(N)
+  - for문을 통해서 count하면 시간복잡도가 O(N**2) 이지만 counter는 count를 n번 하는 것이라 빠르다.
 ```
 import collections
 answer = collections.Counter(participant) - collections.Counter(completion)
