@@ -454,6 +454,18 @@ def dfs(graph, v, visited):
             dfs(graph, i, visited)
 ```
 
+- 파이썬은 재귀호출 횟수가 1000회로 제한되어 sys 모듈의 setrecursionlimit()으로 제한을 늘려줌
+```
+import sys
+sys.setrecursionlimit(10**6)
+
+def dfs(i):
+    for j in range(1, N+1):
+        if adf[i][j] and not chk[j]:
+            chk[j] = True
+            dfs(j)
+```
+
 ### 양방향 그래프 구현 "set, deque, root, visited, sort(reverse=True)"
 ```
 def DFS(graph, root):
