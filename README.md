@@ -3,154 +3,154 @@
 ## 스택/큐
 * 스택/큐 > 기능개발 👉
 [문제](https://programmers.co.kr/learn/courses/30/lessons/42586)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/functiondevlop.py)
+[풀이](/stackandqueue/functiondevlop.py)
 * 스택 수열 > 👉
 [문제](https://www.acmicpc.net/problem/1874)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/stacknumber.py)
+[풀이](/stackandqueue/stacknumber.py)
 * 스택/큐 > 주식 가격 > 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/42584)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/stockprice.py)
+[풀이](/stackandqueue/stockprice.py)
 * 1~1000에서 각 숫자의 개수 구하기 > 👉
 [문제](https://codingdojang.com/scode/504)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/numbercount.py)
+[풀이](/stackandqueue/numbercount.py)
 * 2019 카카오 개발자 겨울 인턴십 > 크레인 인형뽑기 게임 👉
 [문제](https://programmers.co.kr/learn/courses/30/lessons/64061?language=javascript)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/dolldraw.js)
+[풀이](/stackandqueue/dolldraw.js)
 * 큐2 > 👉
 [문제](https://www.acmicpc.net/problem/18258)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/queue.py)
+[풀이](/stackandqueue/queue.py)
 * 2022 KAKAO TECH INTERNSHIP > 두 큐 합 같게 만들기 > 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/118667)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/samequeue.py)
+[풀이](/stackandqueue/samequeue.py)
 * 스택/큐 > 다리를 지나는 트럭 > 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/42583)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/bridge_truck.py)
+[풀이](/stackandqueue/bridge_truck.py)
 
 
 
 ## 힙/해시
 * 해시 > 완주하지 못한 선수 👉
 [문제](https://programmers.co.kr/learn/courses/30/lessons/42576?language=python3#_=_)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/uncomplete.py)
+[풀이](/heapandhash/uncomplete.py)
 * Kth Largest Element in an Array > 👉
 [문제](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/kthlagest.py)
+[풀이](/heapandhash/kthlagest.py)
 * Kth Smallest Element in a Sorted Matrix > 👉
 [문제](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/kthsmallest.py)
+[풀이](/heapandhash/kthsmallest.py)
 * Group Anagrams > 👉
 [문제](https://leetcode.com/problems/group-anagrams/description/)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/groupanagram.py)
+[풀이](/heapandhash/groupanagram.py)
 * Letter Combinations of a Phone Number > 👉
 [문제](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/phonenumbercombination.py)
+[풀이](/heapandhash/phonenumbercombination.py)
 * 2019 KAKAO BLIND RECRUITMENT > 오픈채팅방 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/42888)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/openchat.py)
+[풀이](/heapandhash/openchat.py)
 * 2022 KAKAO BLIND RECRUITMENT > 신고 결과 받기 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/92334)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/reportmail.py)
+[풀이](/heapandhash/reportmail.py)
 
 
 ## 정렬
 * 정렬 > H-Index 👉
 [문제](https://programmers.co.kr/learn/courses/30/lessons/42747)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/hindex.py)
+[풀이](/sort/hindex.py)
 * 정렬 > 소트인사이드 👉
 [문제](https://www.acmicpc.net/problem/1427)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/sortinside.py)
+[풀이](/sort/sortinside.py)
 * 정렬 > 가장 큰 수 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/42746?language=python3)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/biggestnumber.py)
+[풀이](/sort/biggestnumber.py)
 
 
 ## 완전 탐색
 * 완전탐색 > 카펫 👉
 [문제](https://programmers.co.kr/learn/courses/30/lessons/42842)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/carpet.py)
+[풀이](/brouteforce/carpet.py)
 
 
 ## 이분 탐색
 * 이분탐색 > 입국심사 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/43238)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/immigration.py)
+[풀이](/binary/immigration.py)
 * 2020 KAKAO BLIND RECRUITMENT > 가사 검색 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/60060?language=python3)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/searchlycies.py)
+[풀이](/binary/searchlycies.py)
 * 예산 👉
 [문제](https://www.acmicpc.net/problem/2512)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/budget.py)
+[풀이](/binary/budget.py)
 
 
 ## 탐욕법 (Greedy)
 * 탐욕법(Greedy) > 체육복 👉
 [문제](https://programmers.co.kr/learn/courses/30/lessons/42862)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/gymsuit.py)
+[풀이](/greedy/gymsuit.py)
 
 
 ## 동적계획법 (Dynamic Programming)
 * 동적계획법(Dynamic Programming) > 정수 삼각형 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/43105)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/inttriangle.py)
+[풀이](/dp/inttriangle.py)
 * 동적계획법(Dynamic Programming) > N으로 표현 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/42895)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/nreturn.py)
+[풀이](/dp/nreturn.py)
 * 동적계획법(Dynamic Programming) > 도둑질 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/42897)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/thievery.py)
+[풀이](/dp/thievery.py)
 * Unique Paths 👉
 [문제](https://leetcode.com/problems/unique-paths/)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/uniquepath.py)
+[풀이](/dp/uniquepath.py)
 * 연속 부분 수열 합의 개수 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/131701?language=python3)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/circlesum.py)
+[풀이](/dp/circlesum.py)
 
 
 ## 깊이 우선 탐색 / 넓이 우선 탐색 (DFS/BFS)
 * 깊이우선탐색(DFS) 타겟 넘버 > 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/43165?language=python3)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/targetnumber.py)
+[풀이](/dfsbfs/targetnumber.py)
 * DFS와 BFS > 👉
 [문제](https://www.acmicpc.net/problem/1260)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/dfsbfs.py)
+[풀이](/dfsbfs/dfsbfs.py)
 * 서울 지하철 2호선 > 👉
 [문제](https://www.acmicpc.net/problem/16947)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/station2line.py)
+[풀이]/dfsbfs/station2line.py)
 * Numbers With Same Consecutive Differences > 👉
 [문제](https://leetcode.com/problems/numbers-with-same-consecutive-differences/)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/samediffnum.py)
+[풀이](/dfsbfs/samediffnum.py)
 
 
 ## 기타
 * 2021 KAKAO BLIND RECRUITMENT > 신규 아이디 추천 👉
 [문제](https://programmers.co.kr/learn/courses/30/lessons/72410)
 [풀이](https://github.com/nayoung240/algorithm/blob/main/newid.js)
-[풀이2](https://github.com/nayoung240/algorithm/blob/main/newid.py)
+[풀이2](/etc/newid.py)
 * 위클리 챌린지 > 부족한 금액 계산하기 👉
 [문제](https://programmers.co.kr/learn/courses/30/lessons/82612)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/lackmoney.py)
+[풀이](/etc/lackmoney.py)
 * 위클리 챌린지 > 상호평가 👉
 [문제](https://programmers.co.kr/learn/courses/30/lessons/83201)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/evaluation.py)
+[풀이](/etc/evaluation.py)
 * 스킬 체크 테스트 Level1 👉
 [문제](https://programmers.co.kr/skill_checks/403872)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/caldate.py)
+[풀이](/etc/caldate.py)
 * 2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 다단계 피라미드 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/77486?language=python3)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/pyramid.py)
+[풀이](/etc/pyramid.py)
 
 
 ## 성능
 * OddOccurrencesInArray 👉
 [문제](https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/start/)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/oddinarray.py)
+[풀이](/performance/oddinarray.py)
 
 <br>
 
 ## sql
 * 2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 헤비 유저가 소유한 장소
 [문제](https://programmers.co.kr/learn/courses/30/lessons/77487)
-[풀이](https://github.com/nayoung240/algorithm/blob/main/havyuser.sql)
+[풀이](/sql/havyuser.sql)
 
 <br>
 
