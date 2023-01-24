@@ -80,7 +80,9 @@
 * 예산 👉
 [문제](https://www.acmicpc.net/problem/2512)
 [풀이](/binary/budget.py)
-
+* 징검다리 👉
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/43236?language=python3)
+[풀이](/binary/stepingstone.py)
 
 ## 탐욕법 (Greedy)
 * 탐욕법(Greedy) > 체육복 👉
