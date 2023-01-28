@@ -62,6 +62,9 @@
 * 정렬 > 가장 큰 수 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/42746?language=python3)
 [풀이](/sort/biggestnumber.py)
+* triangle 👉
+[문제](https://app.codility.com/programmers/lessons/6-sorting/triangle/start/)
+[풀이](/sort/triangle.py)
 
 
 ## 완전 탐색
