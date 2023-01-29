@@ -177,9 +177,9 @@
 
 <br><hr><br>
 
-# 알아두면 쓸모있는?!
+# 알아두면 쓸모있는?! 나만의 Cheat seat
 
-## ✨입출력
+## ✨입력 받기
 ### 여러줄 입력받을 때 타임아웃 걸리지 않으려면
 ```
 import sys 
@@ -299,8 +299,15 @@ product(*arr)
 
 
 ## ✨힙 heap
+: 여러개의 값들 중에서 최대값이나 최솟값을 빠르게 찾도록 만들어진 자료구조
+
+- 이진 트리 구조
+- 각 노드의 값은 자식 노드보다 크거나 같다. (이진탐색 트리와의 차이점)
+- 두 자식 중 더 큰 자식과 자신의 위치를 바꾸는 알고리즘
+- 최악은 O(logN)
 
 ### 최소힙 (오름차순 정렬)
+: 부모노드의 값이 자식노드의 값보다 항상 작다.
 ```
 import heapq
 
@@ -323,6 +330,7 @@ print(result)
 ```
 
 ### 최대힙 (내림차순 정렬)
+: 부모노드의 값이 자식노드의 값보다 항상 크다.
 ```
 import heapq
 
@@ -342,8 +350,9 @@ result = heapsort([1,3,5,7,9,2,4,6,8,0])
 print(result)
 ```
 
-## ✨다익스트라 알고리즘
+## ✨ Dijkstra 다익스트라 알고리즘
 - 최단 거리 구하기 (노드, 가중치를 가진 간선)
+- 한 지점에서 다른 지점까지 최단 경로
 - 우선순위 큐 heapq : 우선순위가 가장 높은 데이터를 가장 먼저 꺼낸다
 - 거리 리스트, 방문여부 리스트
 
@@ -396,10 +405,14 @@ for i in range(1, len(distance)):
         print(distance[i])
 ```
 
-## ✨이분탐색
+## ✨이분탐색, 이진 탐색, Binary Search
 
-탐색 범위를 절반으로 줄여가면서 원하는 숫자(target)를 찾기
-- 배열안의 값은 반드시 정렬되어있어야 한다.
+: 탐색 범위를 절반으로 줄여가면서 원하는 숫자(target)를 찾기
+
+- 타겟을 찾을 때에는 배열안의 값은 반드시 정렬되어있어야 한다.
+- O(N)이 걸릴 탐색을 O(logN)으로 줄여준다.
+- Parametric Search는 주어진 범위 내에서 원하는 값 또는 조건에 가장 일치하는 값을 찾아내는 알고리즘이다. 이런 형태의 문제를 이진 탐색으로 해결한다.
+
 ```
 left, right = 0, max(arr)
 
@@ -607,11 +620,14 @@ BFS(graph, root)
 
 
 ## ✨정렬 알고리즘
-- Bubble Sort(버블정렬): 첫 원소부터 순차로 현재 원소가 그 다음 원소보다 크면 두 원소를 바꿈
-- Selection Sort(선택정렬): 배열을 선형 탐색(linear scan)하여 가장 작은 원소를 앞으로 보냄
-- Insertion Sort(삽입정렬): 적절한 위치에 삽입(insertion)하는 정렬. 필요할 때만 위치를 바꾸므로 데이터가 정렬되어있을 때는 효율적임.
-- Quick Sort(퀵정렬): 임의의 기준 대비 큰 수와 작은 수로 나누는 방식
-- Merge Sort(병합정렬): 배열을 절반씩 나누어 각각 정렬하고 합해서 다시 정렬
+1. Bubble Sort(버블정렬): 첫 원소부터 순차로 현재 원소가 그 다음 원소보다 크면 두 원소를 바꿈
+2. Selection Sort(선택정렬): 배열을 선형 탐색(linear scan)하여 가장 작은 원소를 앞으로 보냄
+3. Insertion Sort(삽입정렬): 적절한 위치에 삽입(insertion)하는 정렬. 필요할 때만 위치를 바꾸므로 데이터가 정렬되어있을 때는 효율적임.
+4. Quick Sort(퀵정렬): 임의의 기준 대비 큰 수와 작은 수로 나누는 방식
+5. Merge Sort(병합정렬): 배열을 절반씩 나누어 각각 정렬하고 합해서 다시 정렬
+6. Heap Sort(힙정렬): 루트를 힙의 마지막 원소와 교환하고, 나머지 원소에 대해서 반복한다. 최대힙에 원소가 1개 남으면 종료. 
+
+![image](https://user-images.githubusercontent.com/26478398/215319623-e795abe9-2d5e-4ed7-a069-43dc2a7d9f79.png)
 
 ## ✨선택 정렬
 ```
@@ -638,7 +654,7 @@ def quick_sort(array):
     return quick_sort(left_side) + [pivot] + quick_sort(right_side)
 ```
 
-## 최대 연속 부분 수열의 합
+## ✨ Max Consecutive Number Subsequence 최대 연속 부분 수열의 합
 - 개념: 연속된 원소를 더한 부분 수열의 최대값
 
 ### 알고리즘
@@ -648,6 +664,28 @@ def quick_sort(array):
 2. 이 때 합이 음수이면 현재 합은 0이되고 그 다음 수부터 다시 시작한다.
 3. 합의 최댓값을 도출한다.
 
+## ✨ LIS(Longest Increasing Subsequence)  최장 증가 부분 수열 / LCS(Longest Common Subsequence) 최장 공통 부분 수열
+
+- 개념은 간단하지만 어떨 때 해당 방법을 활용할지 판단이 어렵다.
+- 기본적으로 부분 수열 구하기에 DP를 얹은 형태
+- DP로 풀면 O(N^2) 이기때문에 이분탐색을 활용해 O(logN)으로 최적화 가능하다.
+
+```
+import bisect
+
+def lengthOfLIS(nums):
+    arr = []
+        
+    for num in nums:
+        insertion_pos = bisect.bisect_left(arr, num)
+            
+        if insertion_pos == len(arr):
+            arr.append(num)
+        else:
+            arr[insertion_pos] = num
+        
+    return len(arr)
+```
 
 ## ✨기타
 
