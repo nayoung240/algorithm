@@ -687,6 +687,51 @@ def lengthOfLIS(nums):
     return len(arr)
 ```
 
+## Trie 트라이 알고리즘
+문자열을 찾을 때 사용하는 알고리즘
+
+- 시간복잡도: O(L)  // 문자열 길이 만큼
+
+1. 문자들을 저장할 Node클래스를 생성해준다.
+```
+class Node(object):
+    def __init__(self, key):
+        self.key = key          # 해당 문자를 key값으로 가짐
+        self.children = {}      # 자식노드를 딕셔너리형태로 저장
+```
+2. 빈 Node를 생성하고 self.head로 가리킨다.
+3. insert 메소드
+4. search 메소드
+```
+class Trie:
+    def __init__(self):
+        self.head = Node(None)
+    
+    def insert(self, string):
+        cur_node = self.head
+ 
+        for char in string:
+            if char not in cur_node.children:
+                # 해당문자가 자식노드에 없을 경우 노드 추가
+                cur_node.children[char] = Node(char)
+            cur_node = cur_node.children[char]
+ 
+        cur_node.children['*'] = True       # 문자열의 마지막에 '*' 삽입
+        
+    def search(self, string):
+        cur_node = self.head
+ 
+        for char in string:
+            if char in cur_node.children:
+                cur_node = cur_node.children[char]
+            else:
+                return False
+ 
+        # 트리의 끝까지 갔을때 마지막노드의 자식이 '*'이면 True 리턴
+        if '*' in cur_node.children:
+            return True
+```
+
 ## ✨기타
 
 ### 2차원 배열을 1차원 배열로 합치기
