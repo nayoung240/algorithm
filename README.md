@@ -109,6 +109,9 @@
 * 연속 부분 수열 합의 개수 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/131701?language=python3)
 [풀이](/dp/circlesum.py)
+* Longest Increasing Subsequence 👉
+[문제](https://leetcode.com/problems/longest-increasing-subsequence/)
+[풀이](/dp/lis.py)
 
 
 ## 깊이 우선 탐색 / 넓이 우선 탐색 (DFS/BFS)
