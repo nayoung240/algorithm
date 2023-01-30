@@ -289,6 +289,14 @@ from itertools import product
 product(*arr)
 ```
 
+## ✨피보나치 수열
+```
+def fibonacci(a):
+    if a < 2:
+        return a
+    return fibonacci(a-2) + fibonacci(a-1)
+```
+
 ## ✨set 집합 자료형
 - 중복을 제거한다.
 - 추가: add()
@@ -737,6 +745,27 @@ class Trie:
 trie = Trie()
 trie.insert(s)
 a = trie.search('leetcode')
+```
+
+## ✨ 메모이제이션 Memoization
+
+동일한 계산을 여러 번 반복해야 하는 경우, 한 번 계산한 결과를 메모리에 저장해 두었다가 필요한 경우 꺼내서 사용함으로써 중복 계산을 방지하는 기법.
+
+- 동적 계획법의 핵심이 되는 기술
+- 메모리라는 공간 비용을 투입해서 계산에 소요되는 시간 비용을 줄이는 방법이다.
+
+ex) 피보나치 수열 - m이라는 리스트에 이미 계산한 피보나치 값을 넣어두고 필요에따라 가져온다.
+```
+max_value=int(input())
+m=[0]*max_value
+
+def fibonacci(a):
+    if a < 2:
+        return a
+    elif m[a]:
+        return m[a]
+    m[a] = fibonacci(a-1)+fibonacci(a-2)
+    return m[a]
 ```
 
 ## ✨기타
