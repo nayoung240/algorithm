@@ -733,6 +733,12 @@ class Trie:
             return True
 ```
 
+```
+trie = Trie()
+trie.insert(s)
+a = trie.search('leetcode')
+```
+
 ## ✨기타
 
 ### 2차원 배열을 1차원 배열로 합치기
