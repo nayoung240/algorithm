@@ -691,6 +691,7 @@ def lengthOfLIS(nums):
 문자열을 찾을 때 사용하는 알고리즘
 
 - 시간복잡도: O(L)  // 문자열 길이 만큼
+- 이론적으로는 좋지만 해시, 이진 검색 트리에 비해 훨씬 느림. 일반적인 상황에서는 해시나 이진 검색 트리를 사용하는게 좋고 트라이를 활용해야할 때도 있다.
 
 1. 문자들을 저장할 Node클래스를 생성해준다.
 ```
@@ -700,8 +701,8 @@ class Node(object):
         self.children = {}      # 자식노드를 딕셔너리형태로 저장
 ```
 2. 빈 Node를 생성하고 self.head로 가리킨다.
-3. insert 메소드
-4. search 메소드
+3. insert 메소드 (삽입)
+4. search 메소드 (탐색)
 ```
 class Trie:
     def __init__(self):
