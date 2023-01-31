@@ -38,14 +38,17 @@ class Solution:
             s = q.popleft()
             
             for word in wordDict:
+                # 비교대상과 앞자리가 같으면 ex) cats 와 catsandog
                 if s.startswith(word):
+                    # 뒤를 잘라서 set에 담는다 ex) andog
                     new_s = s[len(word):]
                     
                     if new_s == "": 
                         return True
+
                     if new_s not in seen:
                         q.append(new_s)
                         seen.add(new_s)
 
-                        print(seen)
+                print(word,s,q,seen)
         return False
