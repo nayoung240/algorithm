@@ -112,6 +112,9 @@
 * Longest Increasing Subsequence 👉
 [문제](https://leetcode.com/problems/longest-increasing-subsequence/)
 [풀이](/dp/lis.py)
+* Word Break 👉
+[문제](https://leetcode.com/problems/word-break)
+[풀이](/dp/wordbreak.py)
 
 
 ## 깊이 우선 탐색 / 넓이 우선 탐색 (DFS/BFS)
