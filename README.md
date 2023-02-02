@@ -25,6 +25,9 @@
 * 스택/큐 > 다리를 지나는 트럭 > 👉
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/42583)
 [풀이](/stackandqueue/bridge_truck.py)
+* 스택/큐 > Brackets > 👉
+[문제](https://app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/start/)
+[풀이](/stackandqueue/brackets.py)
 
 
 
