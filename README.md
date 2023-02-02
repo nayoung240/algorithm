@@ -1,4 +1,4 @@
-# algorithm
+# algorithm 문제 모음
 
 ## 스택/큐
 * 스택/큐 > 기능개발 👉
