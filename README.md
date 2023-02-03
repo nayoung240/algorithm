@@ -28,7 +28,9 @@
 * Brackets > 👉
 [문제](https://app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/start/)
 [풀이](/stackandqueue/brackets.py)
-
+* Fish > 👉
+[문제](https://app.codility.com/programmers/lessons/7-stacks_and_queues/fish/start/)
+[풀이](/stackandqueue/fish.py)
 
 
 ## 힙/해시
@@ -857,5 +859,12 @@ for text in re.finditer('1', binaryNum):
     now = text.start()
 ```
 
+### for문 거꾸로 출력하기
+```
+st = [1, 2, 3, 4, 5]
+
+for f in range(len(st)-1, -1, -1):
+  print(st[f]) # 5, 4, 3,,,
+```
 
 
