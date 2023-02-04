@@ -128,7 +128,7 @@
 * DFS와 BFS ▪▪
 [문제](https://www.acmicpc.net/problem/1260) ▪▪ [풀이](/dfsbfs/dfsbfs.py)
 * 서울 지하철 2호선 ▪▪
-[문제](https://www.acmicpc.net/problem/16947) ▪▪ [풀이]/dfsbfs/station2line.py)
+[문제](https://www.acmicpc.net/problem/16947) ▪▪ [풀이](/dfsbfs/station2line.py)
 
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
