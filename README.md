@@ -31,6 +31,9 @@
 * Fish > 👉
 [문제](https://app.codility.com/programmers/lessons/7-stacks_and_queues/fish/start/)
 [풀이](/stackandqueue/fish.py)
+* StoneWall > 👉
+[문제](https://app.codility.com/c/run/trainingB2Q6QP-WRP/)
+[풀이](/stackandqueue/stonewall.py)
 
 
 ## 힙/해시
