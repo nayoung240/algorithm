@@ -122,6 +122,9 @@
 [문제](https://leetcode.com/problems/longest-increasing-subsequence/) ▪▪ [풀이](/dp/lis.py)
 * Word Break ▪▪
 [문제](https://leetcode.com/problems/word-break) ▪▪ [풀이](/dp/wordbreak.py)
+* Is Subsequence ▪▪
+[문제](https://leetcode.com/problems/is-subsequence/) ▪▪ [풀이](/dp/issubsequence.py)
+
 
 
 ## 깊이 우선 탐색 / 넓이 우선 탐색 (DFS/BFS)
@@ -868,5 +871,18 @@ st = [1, 2, 3, 4, 5]
 for f in range(len(st)-1, -1, -1):
   print(st[f]) # 5, 4, 3,,,
 ```
+
+### index 함수 try catch 예외처리
+
+```
+idx = 'f'
+t = 'qweqwe'
+
+try:
+    index = t.index(idx)
+except ValueError: 
+    return False
+```
+
 
 
