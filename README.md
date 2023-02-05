@@ -113,6 +113,8 @@
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/42897) ▪▪ [풀이](/dp/thievery.py)
 * 연속 부분 수열 합의 개수 ▪▪
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/131701?language=python3) ▪▪ [풀이](/dp/circlesum.py)
+* 동적계획법(Dynamic Programming) > 등굣길 ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/42898?language=python3) ▪▪ [풀이](/dp/waytoschool.py)
 
 <img src="https://img.shields.io/badge/leetcode-green"/>
 
