@@ -100,6 +100,13 @@
 * 탐욕법(Greedy) > 체육복 ▪▪
 [문제](https://programmers.co.kr/learn/courses/30/lessons/42862) ▪▪ [풀이](/greedy/gymsuit.py)
 
+<img src="https://img.shields.io/badge/leetcode-green"/>
+
+* Best Time to Buy and Sell Stock with Transaction Fee ▪▪
+[문제](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/) ▪▪ [풀이](/greedy/besttimeinstock.py)
+* Partition Array Into Three Parts With Equal Sum ▪▪
+[문제](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/description/) ▪▪ [풀이](/greedy/partswithequalsum.py)
+
 
 ## 동적계획법 (Dynamic Programming)
 
