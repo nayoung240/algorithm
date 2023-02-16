@@ -122,6 +122,8 @@
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/131701?language=python3) ▪▪ [풀이](/dp/circlesum.py)
 * 동적계획법(Dynamic Programming) > 등굣길 ▪▪
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/42898?language=python3) ▪▪ [풀이](/dp/waytoschool.py)
+* 코딩테스트 연습 > Summer/Winter Coding(~2018) > 스티커 모으기(2) ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/12971?language=python3) ▪▪ [풀이](/dp/getsticker.py)
 
 <img src="https://img.shields.io/badge/leetcode-green"/>
 
