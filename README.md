@@ -180,6 +180,9 @@
 [문제](https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/start/) ▪▪ [풀이](/performance/oddinarray.py)
 * FrogRiverOne ▪▪
 [문제](https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/start/) ▪▪ [풀이](/performance/frogreverone.py)
+* MinPerimeterRectangle ▪▪
+[문제](https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/min_perimeter_rectangle/start/) ▪▪ [풀이](/etc/minperimeterrectangle.py)
+
 
 <br>
 
@@ -895,5 +898,13 @@ except ValueError:
     return False
 ```
 
+### 약수 구하기
+- 제곱근을 사용해서 범위를 좁혀야 효율적이다.
 
+```
+for i in range(1, int(N ** (1 / 2)) + 1):
+    if N % i == 0:
+        data.add(i)
+        data.add(N // i)
+```
 
