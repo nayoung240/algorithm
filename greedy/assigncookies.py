@@ -12,9 +12,7 @@ class Solution:
         i, j = 0, 0
         g.sort()
         s.sort()
-
-        print(g,s)
-
+        
         while i < len(g) and j < len(s):
             if s[j] >= g[i]:
                 count += 1
