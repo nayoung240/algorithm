@@ -110,6 +110,12 @@
 [문제](https://leetcode.com/problems/assign-cookies/description/) ▪▪ [풀이](/greedy/assigncookies.py)
 
 
+<img src="https://img.shields.io/badge/codility-orange"/>
+
+* MaxNonoverlappingSegments ▪▪
+[문제](https://app.codility.com/programmers/lessons/16-greedy_algorithms/max_nonoverlapping_segments/start/) ▪▪ [풀이](/greedy/maxnonoverlappingsegments.py)
+
+
 
 ## 동적계획법 (Dynamic Programming)
 
