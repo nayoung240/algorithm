@@ -191,6 +191,9 @@
 [문제](https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/start/) ▪▪ [풀이](/performance/frogreverone.py)
 * MinPerimeterRectangle ▪▪
 [문제](https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/min_perimeter_rectangle/start/) ▪▪ [풀이](/etc/minperimeterrectangle.py)
+* Flags ▪▪
+[문제](https://app.codility.com/c/run/trainingV34MU7-925/) ▪▪ [풀이](/etc/flags.py)
+
 
 
 <br>
