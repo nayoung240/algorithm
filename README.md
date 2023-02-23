@@ -180,6 +180,11 @@
 * 2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 다단계 피라미드 ▪▪
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/77486?language=python3) ▪▪ [풀이](/etc/pyramid.py)
 
+<img src="https://img.shields.io/badge/codility-orange"/>
+
+* ChocolatesByNumbers ▪▪
+[문제](https://app.codility.com/c/run/training5P4VES-W7D/) ▪▪ [풀이](/etc/chocolatesbynumbers.py)
+
 
 ## 성능
 
@@ -806,6 +811,14 @@ def fibonacci(a):
         return m[a]
     m[a] = fibonacci(a-1)+fibonacci(a-2)
     return m[a]
+```
+
+## ✨유클리드 호제법 (최대 공약수 구하기)
+큰 수를 작은 수로 나누어 구한 나머지로 큰 수를 대체한다. 큰 수를 작은 수로 계속 나누어서, 나누어 떨어질 때까지 반복한다. 나누어 떨어질 때(나머지가 0일 때), 나누는 수가 최대공약수이다
+
+```
+from math import gcd
+return N//gcd(M,N)
 ```
 
 ## ✨기타
