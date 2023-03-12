@@ -14,3 +14,4 @@ class Solution:
 			t = t[index+1:]
 
 		return True
+	
