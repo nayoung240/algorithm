@@ -146,6 +146,8 @@
 [문제](https://leetcode.com/problems/is-subsequence/) ▪▪ [풀이](/dp/issubsequence.py)
 * Maximum Subarray ▪▪
 [문제](https://leetcode.com/problems/maximum-subarray/) ▪▪ [풀이](/dp/maximumsubarray.py)
+* Count Number of Teams ▪▪
+[문제](https://leetcode.com/problems/count-number-of-teams/description/) ▪▪ [풀이](/dp/countteams.py)
 
 
 ## 깊이 우선 탐색 / 넓이 우선 탐색 (DFS/BFS)
