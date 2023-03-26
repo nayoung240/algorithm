@@ -1,6 +1,10 @@
 # algorithm 문제 모음
 
 ## 스택/큐
+
+<details>
+<summary>문제풀이</summary>
+
 * 스택 수열 ▪▪
 [문제](https://www.acmicpc.net/problem/1874) ▪▪ [풀이](/stackandqueue/stacknumber.py)
 * 1~1000에서 각 숫자의 개수 구하기 ▪▪
@@ -30,336 +34,12 @@
 * StoneWall ▪▪
 [문제](https://app.codility.com/c/run/trainingB2Q6QP-WRP/) ▪▪ [풀이](/stackandqueue/stonewall.py)
 
+</details>
+
 
 ## 힙/해시
 
-<img src="https://img.shields.io/badge/leetcode-green"/>
-
-* Kth Largest Element in an Array ▪▪
-[문제](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) ▪▪ [풀이](/heapandhash/kthlagest.py)
-* Kth Smallest Element in a Sorted Matrix ▪▪
-[문제](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/) ▪▪ [풀이](/heapandhash/kthsmallest.py)
-* Group Anagrams ▪▪
-[문제](https://leetcode.com/problems/group-anagrams/description/) ▪▪ [풀이](/heapandhash/groupanagram.py)
-* Letter Combinations of a Phone Number ▪▪
-[문제](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)  ▪▪ [풀이](/heapandhash/phonenumbercombination.py)
-
-<img src="https://img.shields.io/badge/programmers-blue"/>
-
-* 해시 > 완주하지 못한 선수 ▪▪
-[문제](https://programmers.co.kr/learn/courses/30/lessons/42576?language=python3#_=_) ▪▪ [풀이](/heapandhash/uncomplete.py)
-* 2019 KAKAO BLIND RECRUITMENT > 오픈채팅방 ▪▪
-[문제](https://school.programmers.co.kr/learn/courses/30/lessons/42888) ▪▪ [풀이](/heapandhash/openchat.py)
-* 2022 KAKAO BLIND RECRUITMENT > 신고 결과 받기 ▪▪
-[문제](https://school.programmers.co.kr/learn/courses/30/lessons/92334) ▪▪ [풀이](/heapandhash/reportmail.py)
-
-
-## 정렬
-* 정렬 > 소트인사이드 ▪▪
-[문제](https://www.acmicpc.net/problem/1427) ▪▪ [풀이](/sort/sortinside.py)
-
-<img src="https://img.shields.io/badge/programmers-blue"/>
-
-* 정렬 > H-Index ▪▪
-[문제](https://programmers.co.kr/learn/courses/30/lessons/42747) ▪▪ [풀이](/sort/hindex.py)
-* 정렬 > 가장 큰 수 ▪▪
-[문제](https://school.programmers.co.kr/learn/courses/30/lessons/42746?language=python3) ▪▪ [풀이](/sort/biggestnumber.py)
-
-<img src="https://img.shields.io/badge/codility-orange"/>
-
-* triangle ▪▪
-[문제](https://app.codility.com/programmers/lessons/6-sorting/triangle/start/) ▪▪ [풀이](/sort/triangle.py)
-
-
-## 완전 탐색
-
-<img src="https://img.shields.io/badge/programmers-blue"/>
-
-* 완전탐색 > 카펫 ▪▪
-[문제](https://programmers.co.kr/learn/courses/30/lessons/42842) ▪▪ [풀이](/brouteforce/carpet.py)
-
-
-## 이분 탐색
-
-* 예산 ▪▪
-[문제](https://www.acmicpc.net/problem/2512) ▪▪ [풀이](/binary/budget.py)
-
-<img src="https://img.shields.io/badge/programmers-blue"/>
-
-* 이분탐색 > 입국심사 ▪▪
-[문제](https://school.programmers.co.kr/learn/courses/30/lessons/43238) ▪▪ [풀이](/binary/immigration.py)
-* 2020 KAKAO BLIND RECRUITMENT > 가사 검색 ▪▪
-[문제](https://school.programmers.co.kr/learn/courses/30/lessons/60060?language=python3) ▪▪ [풀이](/binary/searchlycies.py)
-* 징검다리 ▪▪
-[문제](https://school.programmers.co.kr/learn/courses/30/lessons/43236?language=python3) ▪▪ [풀이](/binary/steppingstone.py)
-
-## 탐욕법 (Greedy)
-
-<img src="https://img.shields.io/badge/programmers-blue"/>
-
-* 탐욕법(Greedy) > 체육복 ▪▪
-[문제](https://programmers.co.kr/learn/courses/30/lessons/42862) ▪▪ [풀이](/greedy/gymsuit.py)
-
-<img src="https://img.shields.io/badge/leetcode-green"/>
-
-* Best Time to Buy and Sell Stock with Transaction Fee ▪▪
-[문제](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/) ▪▪ [풀이](/greedy/besttimeinstock.py)
-* Partition Array Into Three Parts With Equal Sum ▪▪
-[문제](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/description/) ▪▪ [풀이](/greedy/partswithequalsum.py)
-* Assign Cookies ▪▪
-[문제](https://leetcode.com/problems/assign-cookies/description/) ▪▪ [풀이](/greedy/assigncookies.py)
-
-
-<img src="https://img.shields.io/badge/codility-orange"/>
-
-* MaxNonoverlappingSegments ▪▪
-[문제](https://app.codility.com/programmers/lessons/16-greedy_algorithms/max_nonoverlapping_segments/start/) ▪▪ [풀이](/greedy/maxnonoverlappingsegments.py)
-
-
-
-## 동적계획법 (Dynamic Programming)
-
-<img src="https://img.shields.io/badge/programmers-blue"/>
-
-* 동적계획법(Dynamic Programming) > 정수 삼각형 ▪▪
-[문제](https://school.programmers.co.kr/learn/courses/30/lessons/43105) ▪▪ [풀이](/dp/inttriangle.py)
-* 동적계획법(Dynamic Programming) > N으로 표현 ▪▪
-[문제](https://school.programmers.co.kr/learn/courses/30/lessons/42895) ▪▪ [풀이](/dp/nreturn.py)
-* 동적계획법(Dynamic Programming) > 도둑질 ▪▪
-[문제](https://school.programmers.co.kr/learn/courses/30/lessons/42897) ▪▪ [풀이](/dp/thievery.py)
-* 연속 부분 수열 합의 개수 ▪▪
-[문제](https://school.programmers.co.kr/learn/courses/30/lessons/131701?language=python3) ▪▪ [풀이](/dp/circlesum.py)
-* 동적계획법(Dynamic Programming) > 등굣길 ▪▪
-[문제](https://school.programmers.co.kr/learn/courses/30/lessons/42898?language=python3) ▪▪ [풀이](/dp/waytoschool.py)
-* 코딩테스트 연습 > Summer/Winter Coding(~2018) > 스티커 모으기(2) ▪▪
-[문제](https://school.programmers.co.kr/learn/courses/30/lessons/12971?language=python3) ▪▪ [풀이](/dp/getsticker.py)
-
-<img src="https://img.shields.io/badge/leetcode-green"/>
-
-* Unique Paths ▪▪
-[문제](https://leetcode.com/problems/unique-paths/) ▪▪ [풀이](/dp/uniquepath.py)
-* Longest Increasing Subsequence ▪▪
-[문제](https://leetcode.com/problems/longest-increasing-subsequence/) ▪▪ [풀이](/dp/lis.py)
-* Word Break ▪▪
-[문제](https://leetcode.com/problems/word-break) ▪▪ [풀이](/dp/wordbreak.py)
-* Is Subsequence ▪▪
-[문제](https://leetcode.com/problems/is-subsequence/) ▪▪ [풀이](/dp/issubsequence.py)
-* Maximum Subarray ▪▪
-[문제](https://leetcode.com/problems/maximum-subarray/) ▪▪ [풀이](/dp/maximumsubarray.py)
-* Count Number of Teams ▪▪
-[문제](https://leetcode.com/problems/count-number-of-teams/description/) ▪▪ [풀이](/dp/countteams.py)
-
-<img src="https://img.shields.io/badge/codility-orange"/>
-
-* FibFrog ▪▪
-[문제](https://app.codility.com/c/run/trainingHEAFCC-XPS/) ▪▪ [풀이](/dp/fibfrog.py)
-
-
-
-## 깊이 우선 탐색 / 넓이 우선 탐색 (DFS/BFS)
-* DFS와 BFS ▪▪
-[문제](https://www.acmicpc.net/problem/1260) ▪▪ [풀이](/dfsbfs/dfsbfs.py)
-* 서울 지하철 2호선 ▪▪
-[문제](https://www.acmicpc.net/problem/16947) ▪▪ [풀이](/dfsbfs/station2line.py)
-
-<img src="https://img.shields.io/badge/programmers-blue"/>
-
-* 깊이우선탐색(DFS) 타겟 넘버 ▪▪
-[문제](https://school.programmers.co.kr/learn/courses/30/lessons/43165?language=python3) ▪▪ [풀이](/dfsbfs/targetnumber.py)
-
-<img src="https://img.shields.io/badge/leetcode-green"/>
-
-* Numbers With Same Consecutive Differences ▪▪
-[문제](https://leetcode.com/problems/numbers-with-same-consecutive-differences/) ▪▪ [풀이](/dfsbfs/samediffnum.py)
-
-
-## 기타
-
-<img src="https://img.shields.io/badge/programmers-blue"/>
-
-* 2021 KAKAO BLIND RECRUITMENT > 신규 아이디 추천 ▪▪
-[문제](https://programmers.co.kr/learn/courses/30/lessons/72410) ▪▪ [풀이](https://github.com/nayoung240/algorithm/blob/main/newid.js)
-[풀이2](/etc/newid.py)
-* 위클리 챌린지 > 부족한 금액 계산하기 ▪▪
-[문제](https://programmers.co.kr/learn/courses/30/lessons/82612) ▪▪ [풀이](/etc/lackmoney.py)
-* 위클리 챌린지 > 상호평가 ▪▪
-[문제](https://programmers.co.kr/learn/courses/30/lessons/83201) ▪▪ [풀이](/etc/evaluation.py)
-* 스킬 체크 테스트 Level1 ▪▪
-[문제](https://programmers.co.kr/skill_checks/403872) ▪▪ [풀이](/etc/caldate.py)
-* 2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 다단계 피라미드 ▪▪
-[문제](https://school.programmers.co.kr/learn/courses/30/lessons/77486?language=python3) ▪▪ [풀이](/etc/pyramid.py)
-
-<img src="https://img.shields.io/badge/codility-orange"/>
-
-* ChocolatesByNumbers ▪▪
-[문제](https://app.codility.com/c/run/training5P4VES-W7D/) ▪▪ [풀이](/etc/chocolatesbynumbers.py)
-
-
-## 성능
-
-<img src="https://img.shields.io/badge/codility-orange"/>
-
-* OddOccurrencesInArray ▪▪
-[문제](https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/start/) ▪▪ [풀이](/performance/oddinarray.py)
-* FrogRiverOne ▪▪
-[문제](https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/start/) ▪▪ [풀이](/performance/frogreverone.py)
-* MinPerimeterRectangle ▪▪
-[문제](https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/min_perimeter_rectangle/start/) ▪▪ [풀이](/etc/minperimeterrectangle.py)
-* Flags ▪▪
-[문제](https://app.codility.com/c/run/trainingV34MU7-925/) ▪▪ [풀이](/etc/flags.py)
-
-
-
-<br>
-
-## sql
-* 2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 헤비 유저가 소유한 장소 ▪▪
-[문제](https://programmers.co.kr/learn/courses/30/lessons/77487) ▪▪ [풀이](/sql/havyuser.sql)
-
-<br>
-
-## 코딩테스트 사이트
-- 프로그래머스
-  - 장점: 회사 기출 문제 모음 제공, 온라인 IDE 제공, 테스트케이스 추가 가능
-- 백준 
-  - 장점: 다양한 문제, 많은 풀이
-- leetcode
-  - 장점: 영어문제, 온라인 IDE 제공 
-- codility
-  - 장점: 영어문제, 온라인 IDE 제공, 성능시간 분석 제공 
-
-<br><hr><br>
-
-# 알아두면 쓸모있는?! 나만의 Cheat seat
-
-## ✨입력 받기
-### 여러줄 입력받을 때 타임아웃 걸리지 않으려면
-```
-import sys 
-T = int(input()) 
-for i in range(T): 
-    a,b = map(int, sys.stdin.readline().split()) 
-```
-
-### 개행문자까지 입력받기
-```
-import sys
-sys.stdin.readline().strip()
-```
-
-### 분리하여 입력받기
-```
-import sys
-n = list(map(int, sys.stdin.readline().split()))
-```
-
-## ✨map(function, iterable)
-
-### map을 사용하지 않으면 for문으로 번거로움
-```
-myList = [1, 2, 3, 4, 5]
-
-# for 반복문 이용
-result1 = []
-for val in myList:
-    result1.append(val + 1)
-```
-### map을 사용할 때
-```
-myList = [1, 2, 3, 4, 5]
-
-def add_one(n):
-    return n + 1
-
-result2 = list(map(add_one, myList))  # map반환을 list 로 변환
-```
-### map, lamda 함수(이름없는 함수) 이용
-```
-result2 = list(map(lambda x: x * 2, [5, 4, 3, 2, 1]))
-```
-
-## ✨counter
-- return dictionary형 {객체값 : counter수}
-- counter 객체 간 더하기, 빼기, 교집합, 합집합 연산 가능
-- 시간 복잡도: O(N)
-  - for문을 통해서 count하면 시간복잡도가 O(N**2) 이지만 counter는 count를 n번 하는 것이라 빠르다.
-```
-import collections
-answer = collections.Counter(participant) - collections.Counter(completion)
-```
-
-## ✨소수점
-```
-round(number) # 반올림
-
-import math
-math.ceil(number) # 올림
-```
-
-## ✨정렬
-- sort(): 리스트 원본값을 수정한다, 리턴값은 None (sorted 보다 조금 빠르다)
-- sorted(): 리스트 원본값은 그대로, 리턴값은 정렬값
-
-### 중복제거&정렬하기
-```
-sorted(set(nums), reverse=True)
-```
-
-### lamda 인자 : 표현식 
-- key인자에 정렬해줄 값을 넘겨주면 정렬된다 
-
-### list[1]을 기준으로 정렬
-```
-sorted(a, key = lambda x : x[1]) # [(3, 0), (5, 1), (0, 1), (1, 2), (5, 2)]
-```
-### 문자열 길이를 기준으로 정렬
-```
-sorted(list, key=lambda x : len(x)) # ['is', 'my', 'name', 'song']
-```
-### 제일 큰 수 만들기
-```
-list.sort(key=lambda x:str(x)*3, reverse=True)
-```
-
-## ✨순열
-- permutations(): 하나의 리스트에서 모든 조합 계산(순서포함)
-```
-from itertools import permutations
-permutations(arr, 2)
-```
-
-## ✨조합
-- combinations(): 하나의 리스트에서 모든 조합 계산
-```
-import itertools
-
-a = itertools.combinations([2,1,3], 2)
-print(list(a)) # [(2,1),(2,3),(1,3)]
-```
-- product(): 두개 이상의 리스트에서 모든 조합 계산
-```
-from itertools import product
-product(*arr)
-```
-
-## ✨피보나치 수열
-```
-def fibonacci(a):
-    if a < 2:
-        return a
-    return fibonacci(a-2) + fibonacci(a-1)
-```
-
-## ✨set 집합 자료형
-- 중복을 제거한다.
-- 추가: add()
-- 제거: remove()
-- 교집합: list(set(A) & set(B))
-- 합집합: list(set(A) | set(B))
-- 차집합: list(set(A) - set(B))
-
-
-## ✨힙 heap
+### ✨힙 heap
 : 여러개의 값들 중에서 최대값이나 최솟값을 빠르게 찾도록 만들어진 자료구조
 
 - 이진 트리 구조
@@ -411,62 +91,109 @@ result = heapsort([1,3,5,7,9,2,4,6,8,0])
 print(result)
 ```
 
-## ✨ Dijkstra 다익스트라 알고리즘
-- 최단 거리 구하기 (노드, 가중치를 가진 간선)
-- 한 지점에서 다른 지점까지 최단 경로
-- 우선순위 큐 heapq : 우선순위가 가장 높은 데이터를 가장 먼저 꺼낸다
-- 거리 리스트, 방문여부 리스트
+<details>
+<summary>문제풀이</summary>
 
-1. 출발 노드 설정한다
-2. 출발 노드를 기준으로 각 노드의 최소 비용을 저장한다
-3. 방문하지 않은 노드 중에서 가장 비용이 적은 노드를 선택한다
-4. 해당 노드를 거쳐서 특정한 노드로 가능 경우를 고려하여 최소 비용을 갱신한다
-5. 3~4번 반복
+<img src="https://img.shields.io/badge/leetcode-green"/>
+
+* Kth Largest Element in an Array ▪▪
+[문제](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) ▪▪ [풀이](/heapandhash/kthlagest.py)
+* Kth Smallest Element in a Sorted Matrix ▪▪
+[문제](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/) ▪▪ [풀이](/heapandhash/kthsmallest.py)
+* Group Anagrams ▪▪
+[문제](https://leetcode.com/problems/group-anagrams/description/) ▪▪ [풀이](/heapandhash/groupanagram.py)
+* Letter Combinations of a Phone Number ▪▪
+[문제](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)  ▪▪ [풀이](/heapandhash/phonenumbercombination.py)
+
+<img src="https://img.shields.io/badge/programmers-blue"/>
+
+* 해시 > 완주하지 못한 선수 ▪▪
+[문제](https://programmers.co.kr/learn/courses/30/lessons/42576?language=python3#_=_) ▪▪ [풀이](/heapandhash/uncomplete.py)
+* 2019 KAKAO BLIND RECRUITMENT > 오픈채팅방 ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/42888) ▪▪ [풀이](/heapandhash/openchat.py)
+* 2022 KAKAO BLIND RECRUITMENT > 신고 결과 받기 ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/92334) ▪▪ [풀이](/heapandhash/reportmail.py)
+
+</details>
+
+## 정렬
+- sort(): 리스트 원본값을 수정한다, 리턴값은 None (sorted 보다 조금 빠르다)
+- sorted(): 리스트 원본값은 그대로, 리턴값은 정렬값
+
+### 중복제거&정렬하기
 ```
-import sys
-import heapq
-input = sys.stdin.readline
-n, m = map(int, input().split())
-start = int(input())
-INF = int(1e9)
-
-distance = [INF] * (n+1)
-graph = [[] for _ in range(n+1)]
-
-for _ in range(m):
-    a, b, c = map(int, input().split())
-    graph[a].append((b, c))
-
-
-def dijkstra(start):
-    q = []
-    heapq.heappush(q, (0, start))  # 시작노드 정보 우선순위 큐에 삽입
-    distance[start] = 0            # 시작노드->시작노드 거리 기록
-
-    while q:
-        dist, node = heapq.heappop(q)
-
-        # 큐에서 뽑아낸 거리가 이미 갱신된 거리보다 클 경우(=방문한 셈) 무시
-        if distance[node] < dist:
-            continue
-
-        # 큐에서 뽑아낸 노드와 연결된 인접노드들 탐색
-        for next in graph[node]:
-            cost = distance[node] + next[1]   # 시작->node거리 + node->node의인접노드 거리
-            if cost < distance[next[0]]:      # cost < 시작->node의인접노드 거리
-                distance[next[0]] = cost
-                heapq.heappush(q, (cost, next[0]))
-
-dijkstra(start)
-
-for i in range(1, len(distance)):
-    if distance[i] == INF:
-        print('도달할 수 없음')
-    else:
-        print(distance[i])
+sorted(set(nums), reverse=True)
 ```
 
-## ✨이분탐색, 이진 탐색, Binary Search
+### lamda 인자 : 표현식 
+- key인자에 정렬해줄 값을 넘겨주면 정렬된다 
+
+### list[1]을 기준으로 정렬
+```
+sorted(a, key = lambda x : x[1]) # [(3, 0), (5, 1), (0, 1), (1, 2), (5, 2)]
+```
+### 문자열 길이를 기준으로 정렬
+```
+sorted(list, key=lambda x : len(x)) # ['is', 'my', 'name', 'song']
+```
+### 제일 큰 수 만들기
+```
+list.sort(key=lambda x:str(x)*3, reverse=True)
+```
+
+### ✨정렬 알고리즘
+1. Bubble Sort(버블정렬): 첫 원소부터 순차로 현재 원소가 그 다음 원소보다 크면 두 원소를 바꿈
+2. Selection Sort(선택정렬): 배열을 선형 탐색(linear scan)하여 가장 작은 원소를 앞으로 보냄
+3. Insertion Sort(삽입정렬): 적절한 위치에 삽입(insertion)하는 정렬. 필요할 때만 위치를 바꾸므로 데이터가 정렬되어있을 때는 효율적임.
+4. Quick Sort(퀵정렬): 임의의 기준 대비 큰 수와 작은 수로 나누는 방식
+5. Merge Sort(병합정렬): 배열을 절반씩 나누어 각각 정렬하고 합해서 다시 정렬
+6. Heap Sort(힙정렬): 루트를 힙의 마지막 원소와 교환하고, 나머지 원소에 대해서 반복한다. 최대힙에 원소가 1개 남으면 종료. 
+
+![image](https://user-images.githubusercontent.com/26478398/215319623-e795abe9-2d5e-4ed7-a069-43dc2a7d9f79.png)
+
+### ✨선택 정렬
+```
+array = [2, 3, 1, 4]
+for i in range(len(array)):
+    min_index = i # index of the smallest element
+    for j in range(i+1, len(array)):
+        min_index = j
+    array[i], array[min_index] = array[min_index], array[i] # swap
+```
+
+<details>
+<summary>문제풀이</summary>
+
+* 정렬 > 소트인사이드 ▪▪
+[문제](https://www.acmicpc.net/problem/1427) ▪▪ [풀이](/sort/sortinside.py)
+
+<img src="https://img.shields.io/badge/programmers-blue"/>
+
+* 정렬 > H-Index ▪▪
+[문제](https://programmers.co.kr/learn/courses/30/lessons/42747) ▪▪ [풀이](/sort/hindex.py)
+* 정렬 > 가장 큰 수 ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/42746?language=python3) ▪▪ [풀이](/sort/biggestnumber.py)
+
+<img src="https://img.shields.io/badge/codility-orange"/>
+
+* triangle ▪▪
+[문제](https://app.codility.com/programmers/lessons/6-sorting/triangle/start/) ▪▪ [풀이](/sort/triangle.py)
+
+</details>
+
+## 완전 탐색
+
+<details>
+<summary>문제풀이</summary>
+
+<img src="https://img.shields.io/badge/programmers-blue"/>
+
+* 완전탐색 > 카펫 ▪▪
+[문제](https://programmers.co.kr/learn/courses/30/lessons/42842) ▪▪ [풀이](/brouteforce/carpet.py)
+
+</details>
+
+## 이분 탐색, 이진 탐색, Binary Search
 
 : 탐색 범위를 절반으로 줄여가면서 원하는 숫자(target)를 찾기
 
@@ -499,7 +226,102 @@ return -1 #찾지 못했을 때
 => 값이 없을 때는 같은 값 리턴
 => 값이 있을 때 왼쪽을 리턴할지 vs 오른쪽을 리턴할지 차이
 
-## ✨DFS
+<details>
+<summary>문제풀이</summary>
+
+* 예산 ▪▪
+[문제](https://www.acmicpc.net/problem/2512) ▪▪ [풀이](/binary/budget.py)
+
+<img src="https://img.shields.io/badge/programmers-blue"/>
+
+* 이분탐색 > 입국심사 ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/43238) ▪▪ [풀이](/binary/immigration.py)
+* 2020 KAKAO BLIND RECRUITMENT > 가사 검색 ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/60060?language=python3) ▪▪ [풀이](/binary/searchlycies.py)
+* 징검다리 ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/43236?language=python3) ▪▪ [풀이](/binary/steppingstone.py)
+
+</details>
+
+## 탐욕법 (Greedy)
+
+: 그때 그때 상황에서 최적해가 전체 최적해가 된다는 원리
+
+<details>
+<summary>문제풀이</summary>
+
+<img src="https://img.shields.io/badge/programmers-blue"/>
+
+* 탐욕법(Greedy) > 체육복 ▪▪
+[문제](https://programmers.co.kr/learn/courses/30/lessons/42862) ▪▪ [풀이](/greedy/gymsuit.py)
+
+<img src="https://img.shields.io/badge/leetcode-green"/>
+
+* Best Time to Buy and Sell Stock with Transaction Fee ▪▪
+[문제](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/) ▪▪ [풀이](/greedy/besttimeinstock.py)
+* Partition Array Into Three Parts With Equal Sum ▪▪
+[문제](https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/description/) ▪▪ [풀이](/greedy/partswithequalsum.py)
+* Assign Cookies ▪▪
+[문제](https://leetcode.com/problems/assign-cookies/description/) ▪▪ [풀이](/greedy/assigncookies.py)
+
+
+<img src="https://img.shields.io/badge/codility-orange"/>
+
+* MaxNonoverlappingSegments ▪▪
+[문제](https://app.codility.com/programmers/lessons/16-greedy_algorithms/max_nonoverlapping_segments/start/) ▪▪ [풀이](/greedy/maxnonoverlappingsegments.py)
+
+</details>
+
+
+## 동적계획법 DP (Dynamic Programming)
+- 완전 탐색으로 풀었을 때 시간초과가 나는 경우 DP를 이용한다.
+- 문제에서 구하려고 하는 부분을 배열로 선언한다
+- 조건이 여러개인 경우에는 2차원 배열을 선언한다
+- ex) 구간을 구하는 문제는 A[i]를 끝점으로 하는 수열의 최장거리 또는 A[i]를 시작으로 하는 수열의 최장 길이로 선언한다.
+
+<details>
+<summary>문제풀이</summary>
+
+<img src="https://img.shields.io/badge/programmers-blue"/>
+
+* 동적계획법(Dynamic Programming) > 정수 삼각형 ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/43105) ▪▪ [풀이](/dp/inttriangle.py)
+* 동적계획법(Dynamic Programming) > N으로 표현 ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/42895) ▪▪ [풀이](/dp/nreturn.py)
+* 동적계획법(Dynamic Programming) > 도둑질 ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/42897) ▪▪ [풀이](/dp/thievery.py)
+* 연속 부분 수열 합의 개수 ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/131701?language=python3) ▪▪ [풀이](/dp/circlesum.py)
+* 동적계획법(Dynamic Programming) > 등굣길 ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/42898?language=python3) ▪▪ [풀이](/dp/waytoschool.py)
+* 코딩테스트 연습 > Summer/Winter Coding(~2018) > 스티커 모으기(2) ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/12971?language=python3) ▪▪ [풀이](/dp/getsticker.py)
+
+<img src="https://img.shields.io/badge/leetcode-green"/>
+
+* Unique Paths ▪▪
+[문제](https://leetcode.com/problems/unique-paths/) ▪▪ [풀이](/dp/uniquepath.py)
+* Longest Increasing Subsequence ▪▪
+[문제](https://leetcode.com/problems/longest-increasing-subsequence/) ▪▪ [풀이](/dp/lis.py)
+* Word Break ▪▪
+[문제](https://leetcode.com/problems/word-break) ▪▪ [풀이](/dp/wordbreak.py)
+* Is Subsequence ▪▪
+[문제](https://leetcode.com/problems/is-subsequence/) ▪▪ [풀이](/dp/issubsequence.py)
+* Maximum Subarray ▪▪
+[문제](https://leetcode.com/problems/maximum-subarray/) ▪▪ [풀이](/dp/maximumsubarray.py)
+* Count Number of Teams ▪▪
+[문제](https://leetcode.com/problems/count-number-of-teams/description/) ▪▪ [풀이](/dp/countteams.py)
+
+<img src="https://img.shields.io/badge/codility-orange"/>
+
+* FibFrog ▪▪
+[문제](https://app.codility.com/c/run/trainingHEAFCC-XPS/) ▪▪ [풀이](/dp/fibfrog.py)
+
+</details>
+
+## 깊이 우선 탐색 DFS / 넓이 우선 탐색 BFS
+
+### ✨DFS
 - 한가지 정점과 연결된 모든 정점을 탐색해야하는 경우
 - 경로를 찾아야하는 경우
 - 사이클이 존재하는 경로를 찾는 경우
@@ -589,7 +411,7 @@ return visited
 # visited에 중복된 노드가 있을 경우 사이클이 존재한다고 판단!
 ```
 
-## ✨백트래킹 backtracking
+### ✨백트래킹 backtracking
 원하는 값과 불일치 하는 부분이 있으면 더이상 탐색하지 않고 전 단계로 돌아간다.
 - Promising: 트리구조 기반으로 DFS 탐색하면서 조건에 부합하는지 체크
 - Pruning: 조건에 맞지 않는 노드는 가지치키한다.
@@ -616,7 +438,7 @@ def dfs(depth, n, m):
 dfs(0, n, m)
 ```
 
-## ✨BFS
+### ✨BFS
 - 최단 거리를 구해야하는 경우
 - 최단 거리를 구하되 조건이 여러개 존재하는 경우 (방문한 지정도 다시 방문 가능)
 
@@ -692,39 +514,184 @@ BFS(graph, root)
 5. 인접 정점이 기 방문 상태이며 parent가 현재 정점 값이 아니라면 순환 있음으로 결과값 반환
 
 
-## ✨정렬 알고리즘
-1. Bubble Sort(버블정렬): 첫 원소부터 순차로 현재 원소가 그 다음 원소보다 크면 두 원소를 바꿈
-2. Selection Sort(선택정렬): 배열을 선형 탐색(linear scan)하여 가장 작은 원소를 앞으로 보냄
-3. Insertion Sort(삽입정렬): 적절한 위치에 삽입(insertion)하는 정렬. 필요할 때만 위치를 바꾸므로 데이터가 정렬되어있을 때는 효율적임.
-4. Quick Sort(퀵정렬): 임의의 기준 대비 큰 수와 작은 수로 나누는 방식
-5. Merge Sort(병합정렬): 배열을 절반씩 나누어 각각 정렬하고 합해서 다시 정렬
-6. Heap Sort(힙정렬): 루트를 힙의 마지막 원소와 교환하고, 나머지 원소에 대해서 반복한다. 최대힙에 원소가 1개 남으면 종료. 
+<details>
+<summary>문제풀이</summary>
 
-![image](https://user-images.githubusercontent.com/26478398/215319623-e795abe9-2d5e-4ed7-a069-43dc2a7d9f79.png)
+* DFS와 BFS ▪▪
+[문제](https://www.acmicpc.net/problem/1260) ▪▪ [풀이](/dfsbfs/dfsbfs.py)
+* 서울 지하철 2호선 ▪▪
+[문제](https://www.acmicpc.net/problem/16947) ▪▪ [풀이](/dfsbfs/station2line.py)
 
-## ✨선택 정렬
+<img src="https://img.shields.io/badge/programmers-blue"/>
+
+* 깊이우선탐색(DFS) 타겟 넘버 ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/43165?language=python3) ▪▪ [풀이](/dfsbfs/targetnumber.py)
+
+<img src="https://img.shields.io/badge/leetcode-green"/>
+
+* Numbers With Same Consecutive Differences ▪▪
+[문제](https://leetcode.com/problems/numbers-with-same-consecutive-differences/) ▪▪ [풀이](/dfsbfs/samediffnum.py)
+
+</details>
+
+## ✨기타
+
+<details>
+<summary>문제풀이</summary>
+
+<img src="https://img.shields.io/badge/programmers-blue"/>
+
+* 2021 KAKAO BLIND RECRUITMENT > 신규 아이디 추천 ▪▪
+[문제](https://programmers.co.kr/learn/courses/30/lessons/72410) ▪▪ [풀이](https://github.com/nayoung240/algorithm/blob/main/newid.js)
+[풀이2](/etc/newid.py)
+* 위클리 챌린지 > 부족한 금액 계산하기 ▪▪
+[문제](https://programmers.co.kr/learn/courses/30/lessons/82612) ▪▪ [풀이](/etc/lackmoney.py)
+* 위클리 챌린지 > 상호평가 ▪▪
+[문제](https://programmers.co.kr/learn/courses/30/lessons/83201) ▪▪ [풀이](/etc/evaluation.py)
+* 스킬 체크 테스트 Level1 ▪▪
+[문제](https://programmers.co.kr/skill_checks/403872) ▪▪ [풀이](/etc/caldate.py)
+* 2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 다단계 피라미드 ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/77486?language=python3) ▪▪ [풀이](/etc/pyramid.py)
+
+<img src="https://img.shields.io/badge/codility-orange"/>
+
+* ChocolatesByNumbers ▪▪
+[문제](https://app.codility.com/c/run/training5P4VES-W7D/) ▪▪ [풀이](/etc/chocolatesbynumbers.py)
+
+</details>
+
+## ✨성능
+
+<details>
+<summary>문제풀이</summary>
+
+<img src="https://img.shields.io/badge/codility-orange"/>
+
+* OddOccurrencesInArray ▪▪
+[문제](https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/start/) ▪▪ [풀이](/performance/oddinarray.py)
+* FrogRiverOne ▪▪
+[문제](https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/start/) ▪▪ [풀이](/performance/frogreverone.py)
+* MinPerimeterRectangle ▪▪
+[문제](https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/min_perimeter_rectangle/start/) ▪▪ [풀이](/etc/minperimeterrectangle.py)
+* Flags ▪▪
+[문제](https://app.codility.com/c/run/trainingV34MU7-925/) ▪▪ [풀이](/etc/flags.py)
+
+</details>
+
+<br>
+
+## sql
+* 2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 헤비 유저가 소유한 장소 ▪▪
+[문제](https://programmers.co.kr/learn/courses/30/lessons/77487) ▪▪ [풀이](/sql/havyuser.sql)
+
+<br>
+
+## 코딩테스트 사이트
+- 프로그래머스
+  - 장점: 회사 기출 문제 모음 제공, 온라인 IDE 제공, 테스트케이스 추가 가능
+- 백준 
+  - 장점: 다양한 문제, 많은 풀이
+- leetcode
+  - 장점: 영어문제, 온라인 IDE 제공 
+- codility
+  - 장점: 영어문제, 온라인 IDE 제공, 성능시간 분석 제공 
+
+<br><hr><br>
+
+# 알아두면 쓸모있는?! 나만의 Cheat seat
+
+## ✨입력 받기
+### 여러줄 입력받을 때 타임아웃 걸리지 않으려면
 ```
-array = [2, 3, 1, 4]
-for i in range(len(array)):
-    min_index = i # index of the smallest element
-    for j in range(i+1, len(array)):
-        min_index = j
-    array[i], array[min_index] = array[min_index], array[i] # swap
+import sys 
+T = int(input()) 
+for i in range(T): 
+    a,b = map(int, sys.stdin.readline().split()) 
 ```
 
-## ✨분할정복
+### 개행문자까지 입력받기
 ```
-array = [2, 3, 1, 4]
-def quick_sort(array):
-    #quit if list has one or less elements
-    if len(array) <= 1:
-        return array
-    
-    pivot = array[0] # first element as pivot
-    tail = array[1:] # list accept pivot
-    left = [x for x in tail if x <= pivot] # left side
-    right = [x for x in tail if x > pivot] # right side
-    return quick_sort(left_side) + [pivot] + quick_sort(right_side)
+import sys
+sys.stdin.readline().strip()
+```
+
+### 분리하여 입력받기
+```
+import sys
+n = list(map(int, sys.stdin.readline().split()))
+```
+
+## ✨map(function, iterable)
+
+### map을 사용하지 않으면 for문으로 번거로움
+```
+myList = [1, 2, 3, 4, 5]
+
+# for 반복문 이용
+result1 = []
+for val in myList:
+    result1.append(val + 1)
+```
+### map을 사용할 때
+```
+myList = [1, 2, 3, 4, 5]
+
+def add_one(n):
+    return n + 1
+
+result2 = list(map(add_one, myList))  # map반환을 list 로 변환
+```
+### map, lamda 함수(이름없는 함수) 이용
+```
+result2 = list(map(lambda x: x * 2, [5, 4, 3, 2, 1]))
+```
+
+## ✨counter
+- return dictionary형 {객체값 : counter수}
+- counter 객체 간 더하기, 빼기, 교집합, 합집합 연산 가능
+- 시간 복잡도: O(N)
+  - for문을 통해서 count하면 시간복잡도가 O(N**2) 이지만 counter는 count를 n번 하는 것이라 빠르다.
+```
+import collections
+answer = collections.Counter(participant) - collections.Counter(completion)
+```
+
+## ✨소수점
+```
+round(number) # 반올림
+
+import math
+math.ceil(number) # 올림
+```
+
+
+## ✨순열
+- permutations(): 하나의 리스트에서 모든 조합 계산(순서포함)
+```
+from itertools import permutations
+permutations(arr, 2)
+```
+
+## ✨조합
+- combinations(): 하나의 리스트에서 모든 조합 계산
+```
+import itertools
+
+a = itertools.combinations([2,1,3], 2)
+print(list(a)) # [(2,1),(2,3),(1,3)]
+```
+- product(): 두개 이상의 리스트에서 모든 조합 계산
+```
+from itertools import product
+product(*arr)
+```
+
+## ✨피보나치 수열
+```
+def fibonacci(a):
+    if a < 2:
+        return a
+    return fibonacci(a-2) + fibonacci(a-1)
 ```
 
 ## ✨ Max Consecutive Number Subsequence 최대 연속 부분 수열의 합
@@ -760,11 +727,86 @@ def lengthOfLIS(nums):
     return len(arr)
 ```
 
-## ✨ DP 동적 프로그래밍
-- 완전 탐색으로 풀었을 때 시간초과가 나는 경우 DP를 이용한다.
-- 문제에서 구하려고 하는 부분을 배열로 선언한다
-- 조건이 여러개인 경우에는 2차원 배열을 선언한다
-- ex) 구간을 구하는 문제는 A[i]를 끝점으로 하는 수열의 최장거리 또는 A[i]를 시작으로 하는 수열의 최장 길이로 선언한다.
+## ✨set 집합 자료형
+- 중복을 제거한다.
+- 추가: add()
+- 제거: remove()
+- 교집합: list(set(A) & set(B))
+- 합집합: list(set(A) | set(B))
+- 차집합: list(set(A) - set(B))
+
+
+## ✨ Dijkstra 다익스트라 알고리즘
+- 최단 거리 구하기 (노드, 가중치를 가진 간선)
+- 한 지점에서 다른 지점까지 최단 경로
+- 우선순위 큐 heapq : 우선순위가 가장 높은 데이터를 가장 먼저 꺼낸다
+- 거리 리스트, 방문여부 리스트
+
+1. 출발 노드 설정한다
+2. 출발 노드를 기준으로 각 노드의 최소 비용을 저장한다
+3. 방문하지 않은 노드 중에서 가장 비용이 적은 노드를 선택한다
+4. 해당 노드를 거쳐서 특정한 노드로 가능 경우를 고려하여 최소 비용을 갱신한다
+5. 3~4번 반복
+```
+import sys
+import heapq
+input = sys.stdin.readline
+n, m = map(int, input().split())
+start = int(input())
+INF = int(1e9)
+
+distance = [INF] * (n+1)
+graph = [[] for _ in range(n+1)]
+
+for _ in range(m):
+    a, b, c = map(int, input().split())
+    graph[a].append((b, c))
+
+
+def dijkstra(start):
+    q = []
+    heapq.heappush(q, (0, start))  # 시작노드 정보 우선순위 큐에 삽입
+    distance[start] = 0            # 시작노드->시작노드 거리 기록
+
+    while q:
+        dist, node = heapq.heappop(q)
+
+        # 큐에서 뽑아낸 거리가 이미 갱신된 거리보다 클 경우(=방문한 셈) 무시
+        if distance[node] < dist:
+            continue
+
+        # 큐에서 뽑아낸 노드와 연결된 인접노드들 탐색
+        for next in graph[node]:
+            cost = distance[node] + next[1]   # 시작->node거리 + node->node의인접노드 거리
+            if cost < distance[next[0]]:      # cost < 시작->node의인접노드 거리
+                distance[next[0]] = cost
+                heapq.heappush(q, (cost, next[0]))
+
+dijkstra(start)
+
+for i in range(1, len(distance)):
+    if distance[i] == INF:
+        print('도달할 수 없음')
+    else:
+        print(distance[i])
+```
+
+
+## ✨분할정복
+```
+array = [2, 3, 1, 4]
+def quick_sort(array):
+    #quit if list has one or less elements
+    if len(array) <= 1:
+        return array
+    
+    pivot = array[0] # first element as pivot
+    tail = array[1:] # list accept pivot
+    left = [x for x in tail if x <= pivot] # left side
+    right = [x for x in tail if x > pivot] # right side
+    return quick_sort(left_side) + [pivot] + quick_sort(right_side)
+```
+
 
 ## ✨ Trie 트라이 알고리즘
 문자열을 찾을 때 사용하는 알고리즘
