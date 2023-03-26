@@ -107,7 +107,10 @@ print(result)
 [문제](https://leetcode.com/problems/group-anagrams/description/) ▪▪ [풀이](/heapandhash/groupanagram.py)
 * Letter Combinations of a Phone Number ▪▪
 [문제](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)  ▪▪ [풀이](/heapandhash/phonenumbercombination.py)
+* Determine if Two Strings Are Close ▪▪
+[문제](https://leetcode.com/problems/determine-if-two-strings-are-close/description/)  ▪▪ [풀이](/heapandhash/closestring.py)
 
+    
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
 * 해시 > 완주하지 못한 선수 ▪▪
@@ -643,14 +646,18 @@ result2 = list(map(add_one, myList))  # map반환을 list 로 변환
 result2 = list(map(lambda x: x * 2, [5, 4, 3, 2, 1]))
 ```
 
-## ✨counter
+## ✨counter()
 - return dictionary형 {객체값 : counter수}
 - counter 객체 간 더하기, 빼기, 교집합, 합집합 연산 가능
 - 시간 복잡도: O(N)
   - for문을 통해서 count하면 시간복잡도가 O(N**2) 이지만 counter는 count를 n번 하는 것이라 빠르다.
+
+
 ```
-import collections
-answer = collections.Counter(participant) - collections.Counter(completion)
+from collections import Counter
+answer = Counter(p) - Counter(c)
+answer = set(Counter(p)) - set(Counter(c))
+answer = Counter(Counter(p).values()) - Counter(Counter(c).values())
 ```
 
 ## ✨소수점
