@@ -2,8 +2,7 @@
 
 ## 스택/큐
 
-<details>
-<summary>문제풀이</summary>
+<details><summary><b>👀문제풀이</b></summary>
 
 * 스택 수열 ▪▪
 [문제](https://www.acmicpc.net/problem/1874) ▪▪ [풀이](/stackandqueue/stacknumber.py)
@@ -34,7 +33,7 @@
 * StoneWall ▪▪
 [문제](https://app.codility.com/c/run/trainingB2Q6QP-WRP/) ▪▪ [풀이](/stackandqueue/stonewall.py)
 
-</details>
+</details><br>
 
 
 ## 힙/해시
@@ -91,8 +90,7 @@ result = heapsort([1,3,5,7,9,2,4,6,8,0])
 print(result)
 ```
 
-<details>
-<summary>문제풀이</summary>
+<details><summary><b>👀문제풀이</b></summary>
 
 <img src="https://img.shields.io/badge/leetcode-green"/>
 
@@ -114,7 +112,7 @@ print(result)
 * 2022 KAKAO BLIND RECRUITMENT > 신고 결과 받기 ▪▪
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/92334) ▪▪ [풀이](/heapandhash/reportmail.py)
 
-</details>
+</details><br>
 
 ## 정렬
 - sort(): 리스트 원본값을 수정한다, 리턴값은 None (sorted 보다 조금 빠르다)
@@ -161,8 +159,7 @@ for i in range(len(array)):
     array[i], array[min_index] = array[min_index], array[i] # swap
 ```
 
-<details>
-<summary>문제풀이</summary>
+<details><summary><b>👀문제풀이</b></summary>
 
 * 정렬 > 소트인사이드 ▪▪
 [문제](https://www.acmicpc.net/problem/1427) ▪▪ [풀이](/sort/sortinside.py)
@@ -179,19 +176,18 @@ for i in range(len(array)):
 * triangle ▪▪
 [문제](https://app.codility.com/programmers/lessons/6-sorting/triangle/start/) ▪▪ [풀이](/sort/triangle.py)
 
-</details>
+</details><br>
 
 ## 완전 탐색
 
-<details>
-<summary>문제풀이</summary>
+<details><summary><b>👀문제풀이</b></summary>
 
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
 * 완전탐색 > 카펫 ▪▪
 [문제](https://programmers.co.kr/learn/courses/30/lessons/42842) ▪▪ [풀이](/brouteforce/carpet.py)
 
-</details>
+</details><br>
 
 ## 이분 탐색, 이진 탐색, Binary Search
 
@@ -226,8 +222,7 @@ return -1 #찾지 못했을 때
 => 값이 없을 때는 같은 값 리턴
 => 값이 있을 때 왼쪽을 리턴할지 vs 오른쪽을 리턴할지 차이
 
-<details>
-<summary>문제풀이</summary>
+<details><summary><b>👀문제풀이</b></summary>
 
 * 예산 ▪▪
 [문제](https://www.acmicpc.net/problem/2512) ▪▪ [풀이](/binary/budget.py)
@@ -241,14 +236,13 @@ return -1 #찾지 못했을 때
 * 징검다리 ▪▪
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/43236?language=python3) ▪▪ [풀이](/binary/steppingstone.py)
 
-</details>
+</details><br>
 
 ## 탐욕법 (Greedy)
 
 : 그때 그때 상황에서 최적해가 전체 최적해가 된다는 원리
 
-<details>
-<summary>문제풀이</summary>
+<details><summary><b>👀문제풀이</b></summary>
 
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
@@ -270,7 +264,7 @@ return -1 #찾지 못했을 때
 * MaxNonoverlappingSegments ▪▪
 [문제](https://app.codility.com/programmers/lessons/16-greedy_algorithms/max_nonoverlapping_segments/start/) ▪▪ [풀이](/greedy/maxnonoverlappingsegments.py)
 
-</details>
+</details><br>
 
 
 ## 동적계획법 DP (Dynamic Programming)
@@ -279,8 +273,7 @@ return -1 #찾지 못했을 때
 - 조건이 여러개인 경우에는 2차원 배열을 선언한다
 - ex) 구간을 구하는 문제는 A[i]를 끝점으로 하는 수열의 최장거리 또는 A[i]를 시작으로 하는 수열의 최장 길이로 선언한다.
 
-<details>
-<summary>문제풀이</summary>
+<details><summary><b>👀문제풀이</b></summary>
 
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
@@ -317,7 +310,7 @@ return -1 #찾지 못했을 때
 * FibFrog ▪▪
 [문제](https://app.codility.com/c/run/trainingHEAFCC-XPS/) ▪▪ [풀이](/dp/fibfrog.py)
 
-</details>
+</details><br>
 
 ## 깊이 우선 탐색 DFS / 넓이 우선 탐색 BFS
 
@@ -514,8 +507,7 @@ BFS(graph, root)
 5. 인접 정점이 기 방문 상태이며 parent가 현재 정점 값이 아니라면 순환 있음으로 결과값 반환
 
 
-<details>
-<summary>문제풀이</summary>
+<details><summary><b>👀문제풀이</b></summary>
 
 * DFS와 BFS ▪▪
 [문제](https://www.acmicpc.net/problem/1260) ▪▪ [풀이](/dfsbfs/dfsbfs.py)
@@ -532,12 +524,11 @@ BFS(graph, root)
 * Numbers With Same Consecutive Differences ▪▪
 [문제](https://leetcode.com/problems/numbers-with-same-consecutive-differences/) ▪▪ [풀이](/dfsbfs/samediffnum.py)
 
-</details>
+</details><br>
 
 ## ✨기타
 
-<details>
-<summary>문제풀이</summary>
+<details><summary><b>👀문제풀이</b></summary>
 
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
@@ -558,12 +549,11 @@ BFS(graph, root)
 * ChocolatesByNumbers ▪▪
 [문제](https://app.codility.com/c/run/training5P4VES-W7D/) ▪▪ [풀이](/etc/chocolatesbynumbers.py)
 
-</details>
+</details><br>
 
 ## ✨성능
 
-<details>
-<summary>문제풀이</summary>
+<details><summary><b>👀문제풀이</b></summary>
 
 <img src="https://img.shields.io/badge/codility-orange"/>
 
@@ -576,9 +566,8 @@ BFS(graph, root)
 * Flags ▪▪
 [문제](https://app.codility.com/c/run/trainingV34MU7-925/) ▪▪ [풀이](/etc/flags.py)
 
-</details>
+</details><br>
 
-<br>
 
 ## sql
 * 2021 Dev-Matching: 웹 백엔드 개발자(상반기) > 헤비 유저가 소유한 장소 ▪▪
