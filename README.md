@@ -152,7 +152,7 @@
 <img src="https://img.shields.io/badge/codility-orange"/>
 
 * FibFrog ▪▪
-[문제](https://app.codility.com/c/run/trainingHEAFCC-XPS/) ▪▪ [풀이](/dp/FibFrog.py)
+[문제](https://app.codility.com/c/run/trainingHEAFCC-XPS/) ▪▪ [풀이](/dp/fibfrog.py)
 
 
 
