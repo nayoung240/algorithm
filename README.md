@@ -193,9 +193,9 @@ for i in range(len(array)):
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
 * 완전탐색 > 카펫 ▪▪
-[문제](https://programmers.co.kr/learn/courses/30/lessons/42842) ▪▪ [풀이](/brouteforce/carpet.py)
+[문제](https://programmers.co.kr/learn/courses/30/lessons/42842) ▪▪ [풀이](/bruteforce/carpet.py)
 * 2023 KAKAO BLIND RECRUITMENT > 이모티콘 할인행사 ▪▪
-[문제](https://school.programmers.co.kr/learn/courses/30/lessons/150368) ▪▪ [풀이](/brouteforce/emoticonsale.py)
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/150368) ▪▪ [풀이](/bruteforce/emoticonsale.py)
 
 </details><br>
 
