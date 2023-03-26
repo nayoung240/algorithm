@@ -194,6 +194,8 @@ for i in range(len(array)):
 
 * 완전탐색 > 카펫 ▪▪
 [문제](https://programmers.co.kr/learn/courses/30/lessons/42842) ▪▪ [풀이](/brouteforce/carpet.py)
+* 2023 KAKAO BLIND RECRUITMENT > 이모티콘 할인행사 ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/150368) ▪▪ [풀이](/brouteforce/emoticonsale.py)
 
 </details><br>
 
@@ -687,7 +689,9 @@ print(list(a)) # [(2,1),(2,3),(1,3)]
 - product(): 두개 이상의 리스트에서 모든 조합 계산
 ```
 from itertools import product
-product(*arr)
+
+a = product(*arr)
+b = product(arr, repet=5)
 ```
 
 ## ✨피보나치 수열
