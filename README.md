@@ -726,6 +726,42 @@ def BFS(graph, root):
 BFS(graph, root)
 ```
 
+### 미로 최단 거리 찾기
+```
+from collections import deque
+
+def solution(maps):
+
+    dx = [-1, 1, 0, 0]
+    dy = [0, 0, -1, 1]
+
+    r = len(maps)
+    c = len(maps[0])
+
+    graph = [[-1 for _ in range(c)] for _ in range(r)]
+
+    queue = deque()
+    queue.append([0, 0])
+
+    graph[0][0] = 1
+
+    while queue:
+        y, x = queue.popleft()
+
+        # 현재 위치에서 4가지 방향으로 위치 확인
+        for i in range(4):
+            nx = x + dx[i]
+            ny = y + dy[i]
+
+            if 0 <= ny < r and 0 <= nx < c and maps[ny][nx] == 1:
+                if graph[ny][nx] == -1:
+                    graph[ny][nx] = graph[y][x] + 1
+                    queue.append([ny, nx])
+
+    answer = graph[-1][-1]
+    return answer
+```
+
 ### 방향 그래프 순환 탐지
 
 1. 최초에 내차수가 0인 정점을 모두 찾아 각 정점을 큐에 넣는다.
@@ -753,8 +789,10 @@ BFS(graph, root)
 
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
-* 깊이우선탐색(DFS) 타겟 넘버 ▪▪
+* 타겟 넘버 ▪▪
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/43165?language=python3) ▪▪ [풀이](/dfsbfs/targetnumber.py)
+* 게임 맵 최단거리 ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/1844?language=python3) ▪▪ [풀이](/dfsbfs/gamemap.py)
 
 <img src="https://img.shields.io/badge/leetcode-green"/>
 
