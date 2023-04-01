@@ -333,11 +333,130 @@ return -1 #찾지 못했을 때
 - 경로를 찾아야하는 경우
 - 사이클이 존재하는 경로를 찾는 경우
 
-### 구현
+### 구현 방법
+- 인접행렬, stack 자료구조
+- 인접행렬, 재귀함수
+- 인접리스트, stack 자료구조
+- 인접리스트, 재귀함수
+
+### 구현 절차
 1. 탐색 시작 노드를 스택에 삽입 후 방문처리
 2. 스택의 최상단 노드에 방문하지 않은 인접 노드가 있으면 인접 노드를 스택에 넣고 방문 처리. 방문하지 않은 인접 노드가 없으면 스택에서 최상단 노드를 꺼낸다.
 
-### 스택으로 구현 "set, stack, root, visited"
+### 인접행렬 스택으로 구현 1)
+```
+n, m, v = map(int, input().split())
+matrix = [[0]*(n+1) for _ in range(n+1)]
+visited = [False]*(n+1)
+
+for _ in range(m):
+    f, t = map(int, input().split())
+    matrix[f][t] = matrix[t][f] = 1
+
+def dfs(matrix, i, visited):
+    stack = [i]
+    
+    while stack:
+        value = stack.pop()
+        
+        if not visited[value]:
+            visited[value] = True
+        
+        for c in range(len(matrix[value])-1, -1, -1):
+            if matrix[value][c] == 1 and not visited[c]:
+                stack.append(c)
+                
+dfs(matrix, v, visited)
+```
+
+### 인접행렬 재귀함수로 구현 2)
+- 코드가 간결하다.
+```
+n, m, v = map(int, input().split())
+matrix = [[0] * (n+1) for _ in range(n+1)]
+visited = [False] * (n+1)
+
+for _ in range(m):
+  f, t = map(int, input().split())
+  matrix[f][t] = matrix[t][f] = 1
+
+def dfs(matrix, i, visited):
+  visited[i] = True
+  print(i, end=' ')
+  for c in range(len(matrix[i])):
+    if matrix[i][c] == 1 and not visited[c]:
+      dfs(matrix, c, visited)
+dfs(matrix, v, visited)
+```
+
+### 인접리스트 stack 구현 2)
+- 인접리스트를 이중 list로 구현했습니다.
+- 인접행렬과 마찬가지로 n+1개의 노드를 만들었습니다.
+- 인접행렬에서 모든 행을 반복문으로 확인하여 연결정보를 얻은 것과는 달리, graph[value] 한번 만으로 모든 연결 정보를 가져온다.
+
+```
+n, m, v = map(int, input().split())
+graph = [[]] * (n+1)
+visited = [False] * (n+1)
+
+for _ in range(m):
+  f, t = map(int, input().split())
+  if graph[f] == []:
+    graph[f] = [t]
+  else:
+    graph[f].append(t)
+  if graph[t] == []:
+    graph[t] = [f]
+  else:
+    graph[t].append(f)
+
+def dfs_stack(graph, i, visited):
+  stack = [i]
+  visited[i] == True
+  while stack:
+    value = stack.pop()
+    if not visited[value]:
+      print(value, end=' ')
+      visited[value] = True
+    for j in graph[value]:
+      if not visited[j]:
+        stack.append(j)
+
+for i in graph: # 앞서 인접행렬에서 거꾸로 순회했던 이유가 같습니다.
+	i.reverse()
+  
+dfs(graph, v, visited)
+```
+
+### 인접리스트 재귀함수 구현
+
+```
+n, m, v = map(int, input().split())
+graph = [[]] * (n+1)
+visited = [False] * (n+1)
+
+for _ in range(m):
+  f, t = map(int, input().split())
+  if graph[f] == []:
+    graph[f] = [t]
+  else:
+    graph[f].append(t)
+  if graph[t] == []:
+    graph[t] = [f]
+  else:
+    graph[t].append(f)
+
+def dfs(graph, i, visited):
+  visited[i] = True
+  print(i, end=' ')
+  for j in graph[i]:
+    if not visited[j]:
+      dfs(graph, j, visited)
+
+dfs(graph, v, visited)
+```
+
+### 스택으로 구현 2) "set, stack, root, visited"
 ```
 graph = {1: set([3, 4]),
               2: set([3, 4, 5]),
@@ -448,12 +567,116 @@ dfs(0, n, m)
 ### ✨BFS
 - 최단 거리를 구해야하는 경우
 - 최단 거리를 구하되 조건이 여러개 존재하는 경우 (방문한 지정도 다시 방문 가능)
+- 큐 자료구조 이용
 
-### 구현
+### 구현 방법
+- 인접행렬, queue 자료구조
+- 인접리스트, queue 자료구조
+
+
+### 구현 절차
 1. 탐색 시작 노드를 큐에 삽입하고 방문처리
 2. 큐에서 노드를 꺼내 인접 노드 중에서 방문하지 않은 노드를 모두 큐에 삽입하고 방문처리 한다.
+3. 2번을 수행할 수 없을 때까지 반복 while
 
-### 큐로 구현 "set, deque, root, visited"
+
+### 인접행렬, queue 자료구조
+
+```
+n, m, v = map(int, input().split())
+matrix = [[0] * (n+1) for _ in range(n+1)]
+visited = [False] * (n+1)
+
+for _ in range(m):
+  f, t = map(int, input().split())
+  matrix[f][t] = matrix[t][f] = 1
+  
+from collections import deque
+
+def bfs(matrix, i, visited):
+  queue= deque()
+  queue.append(i)
+  while queue:
+    value = queue.popleft()
+    if not visited[value]:
+      print(value, end=' ')
+      visited[value] = True
+      for c in range(len(matrix[value])):
+        if matrix[value][c] == 1 and not visited[c]:
+          queue.append(c)
+```
+
+### 인접리스트, queue 자료구조
+```
+n, m, v = map(int, input().split())
+graph = [[]] * (n+1)
+visited = [False] * (n+1)
+
+for _ in range(m):
+  f, t = map(int, input().split())
+  if graph[f] == []:
+    graph[f] = [t]
+  else:
+    graph[f].append(t)
+  if graph[t] == []:
+    graph[t] = [f]
+  else:
+    graph[t].append(f)
+
+from collections import deque
+
+def bfs(graph, i, visited):
+  queue= deque()
+  queue.append(i)
+  while queue:
+    value = queue.popleft()
+
+    if not visited[value]:
+      print(value, end=' ')
+      visited[value] = True
+      for j in graph[value]:
+        queue.append(j)
+
+bfs(graph, v, visited)
+```
+
+
+### 큐로 구현 1) "deque, start, visited"
+```
+from collections import deque
+
+def bfs(graph, start, visited):
+    queue = deque([start])
+    visited[start] = True
+    
+    while queue:
+        v = queue.popleft()
+        
+        for i in graph[v]:
+            if not visited[i]:
+                queue.append(i)
+                visited[i] = True
+                
+# 각 노드가 연결된 정보 (2차원 리스트) 첫번째는 비워둔다.
+graph = [
+    [],
+    [2,3,8],
+    [1,7],
+    [1,4,5],
+    [3,5],
+    [3,4],
+    [7],
+    [2,6,8],
+    [1,7]
+]
+
+# 각 노드가 방문된 정보 (1차원 리스트)
+visited = [False] * 9
+
+bfs(graph, 1, visited)
+```
+
+### 큐로 구현 2) "set, deque, root, visited"
 ```
 from collections import deque
 
