@@ -187,7 +187,22 @@ for i in range(len(array)):
 
 </details><br>
 
-## 완전 탐색
+## ✨완전 탐색
+
+### 방향벡터
+```
+# 동서남북
+dx = [0, 0, 1, -1]
+dy = [1, -1, 0, 0]
+
+# 현재위치
+x, y = 2, 2
+
+# 다음위치
+for i in range(4):
+	nx = x + dx[i]
+	ny = y + dy[i]	
+```
 
 <details><summary><b>👀문제풀이</b></summary>
 
@@ -937,6 +952,7 @@ n = list(map(int, sys.stdin.readline().split()))
 ```
 
 ## ✨map(function, iterable)
+- 리스트의 모든 원소에 각각 특정 함수를 적용할 때 사용한다.
 
 ### map을 사용하지 않으면 for문으로 번거로움
 ```
@@ -956,6 +972,7 @@ def add_one(n):
 
 result2 = list(map(add_one, myList))  # map반환을 list 로 변환
 ```
+
 ### map, lamda 함수(이름없는 함수) 이용
 ```
 result2 = list(map(lambda x: x * 2, [5, 4, 3, 2, 1]))
@@ -988,17 +1005,18 @@ math.ceil(number) # 올림
 - permutations(): 하나의 리스트에서 모든 조합 계산(순서포함)
 ```
 from itertools import permutations
-permutations(arr, 2)
+a = list(permutations(arr, 2))
 ```
 
 ## ✨조합
-- combinations(): 하나의 리스트에서 모든 조합 계산
+- combinations(): 하나의 리스트에서 모든 조합 계산 (순서 상관 없이)
 ```
-import itertools
+from itertools import combinations
 
-a = itertools.combinations([2,1,3], 2)
+a = combinations([2,1,3], 2)
 print(list(a)) # [(2,1),(2,3),(1,3)]
 ```
+
 - product(): 두개 이상의 리스트에서 모든 조합 계산
 ```
 from itertools import product
@@ -1213,7 +1231,9 @@ def fibonacci(a):
 
 ```
 from math import gcd
-return N//gcd(M,N)
+
+a = math.gcd(21, 14) # 최대 공약수
+a = 21 * 14 // math.gcd(21, 14) # 최소 공배수
 ```
 
 ## ✨유니온파인드
