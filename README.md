@@ -226,7 +226,8 @@ while left <= right:
 return -1 #찾지 못했을 때
 ```
 
-### bisect_left(a, x)
+### 
+left(a, x)
 - 정렬된 a에 x를 삽입할 위치를 리턴한다.
 - x가 이미 있으면 x위치의 앞 위치를 리턴한다.
 
@@ -235,6 +236,32 @@ return -1 #찾지 못했을 때
 
 => 값이 없을 때는 같은 값 리턴
 => 값이 있을 때 왼쪽을 리턴할지 vs 오른쪽을 리턴할지 차이
+
+```
+from bisect import bisect_left, bisect_right
+
+a = [1,2,4,4,8]
+x = 4
+
+print(bisect_left(a, x)) // 2
+print(bisect_right(a, x)) // 4
+```
+
+### 값이 특정 범위에 속하는 데이터 개수 세기
+```
+from bisect import bisect_left, bisect_right
+
+def count_by_range(a, left_val, right_val):
+    right_index = bisect_right(a, right_val)
+	left_index = bisect_left(a, left_val)
+	return right_index - left index
+	
+a = [1,2,3,3,3,3,4,4,8,9]
+
+print(count_by_range(a,4,4)) # 값이 4인 개수 -> 2
+print(count_by_range(a,-1,3)) # 값이 -1 ~ 3인 개수 -> 6
+```
+
 
 <details><summary><b>👀문제풀이</b></summary>
 
@@ -260,7 +287,7 @@ return -1 #찾지 못했을 때
 
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
-* 탐욕법(Greedy) > 체육복 ▪▪
+* 체육복 ▪▪
 [문제](https://programmers.co.kr/learn/courses/30/lessons/42862) ▪▪ [풀이](/greedy/gymsuit.py)
 
 <img src="https://img.shields.io/badge/leetcode-green"/>
@@ -1238,6 +1265,11 @@ def union(a, b):    # union 두 집합을 연결해주는 함수
   2. 1번에서 구한 노드를 대상으로 다시 dfs를 수행해 가장 멀리 떨어져 있는 노드 구하기 -> 
 
 ## ✨기타
+
+
+### 리스트 컴프리헨션 - 2차원 리스트를 초기화할 때 유의사항
+* a = [[0] * m] * n -> 전체 리스트 안에 포함된 리스트가 모두 같은 객체로 인식되므로 주의
+* 좋은 예시) n X m 크기의 2차원 리스트 -> [[0] * m for _ in range(n)]
 
 ### 2차원 배열을 1차원 배열로 합치기
 ```
