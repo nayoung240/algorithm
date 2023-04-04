@@ -852,6 +852,8 @@ def solution(maps):
 [문제](https://www.acmicpc.net/problem/16947) ▪▪ [풀이](/dfsbfs/station2line.py)
 * 연결 요소의 개수 ▪▪
 [문제](https://www.acmicpc.net/problem/11724) ▪▪ [풀이](/dfsbfs/connectedcomponent.py)
+* 미로 탐색 ▪▪
+[문제](https://www.acmicpc.net/problem/2178) ▪▪ [풀이](/dfsbfs/searchmaze.py)
 	
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
