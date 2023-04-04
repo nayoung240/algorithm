@@ -438,28 +438,25 @@ dfs(matrix, v, visited)
 
 ```
 n, m, v = map(int, input().split())
-graph = [[]] * (n+1)
+graph = [[] for _ in range(n+1)]
 visited = [False] * (n+1)
 
-for _ in range(m):
-  f, t = map(int, input().split())
-  if graph[f] == []:
-    graph[f] = [t]
-  else:
-    graph[f].append(t)
-  if graph[t] == []:
-    graph[t] = [f]
-  else:
-    graph[t].append(f)
+for _ in range(m): 
+  v1, v2 = map(int, sys.stdin.readline().split())
+  graph[v1].append(v2)
+  graph[v2].append(v1)
 
-def dfs_stack(graph, i, visited):
+def dfs(graph, i, visited):
   stack = [i]
-  visited[i] == True
+  visited[i] = True
+  
   while stack:
     value = stack.pop()
+	
     if not visited[value]:
       print(value, end=' ')
       visited[value] = True
+	  
     for j in graph[value]:
       if not visited[j]:
         stack.append(j)
@@ -479,18 +476,13 @@ visited = [False] * (n+1)
 
 for _ in range(m):
   f, t = map(int, input().split())
-  if graph[f] == []:
-    graph[f] = [t]
-  else:
-    graph[f].append(t)
-  if graph[t] == []:
-    graph[t] = [f]
-  else:
-    graph[t].append(f)
+  graph[f].append(t)
+  graph[t].append(f)
 
 def dfs(graph, i, visited):
   visited[i] = True
   print(i, end=' ')
+  
   for j in graph[i]:
     if not visited[j]:
       dfs(graph, j, visited)
@@ -562,6 +554,36 @@ def DFS(graph, root):
                 temp.sort(reverse=True)
                 stack += temp
     return " ".join(str(i) for i in visited)
+```
+
+### connected component 구하기
+```
+import sys
+sys.setrecursionlimit(10000)
+
+v, e = map(int, sys.stdin.readline().split())
+graph = [[] for _ in range(v+1)]
+visited = [False] * (v+1)
+count = 0
+
+for i in range(e): 
+  v1, v2 = map(int, sys.stdin.readline().split())
+  graph[v1].append(v2)
+  graph[v2].append(v1)
+
+def dfs(v):
+    # 현재 노드 방문 처리
+    visited[v] = True
+
+    # 현재 노드와 연결된 다른 노드를 재귀적으로 방문
+    for i in graph[v]:
+        if not visited[i]:
+            dfs(i)
+
+for i in range(1, v+1):
+  if not visited[i]:
+    dfs(i)
+    count += 1
 ```
 
 ### 사이클 찾기
@@ -828,7 +850,9 @@ def solution(maps):
 [문제](https://www.acmicpc.net/problem/1260) ▪▪ [풀이](/dfsbfs/dfsbfs.py)
 * 서울 지하철 2호선 ▪▪
 [문제](https://www.acmicpc.net/problem/16947) ▪▪ [풀이](/dfsbfs/station2line.py)
-
+* 연결 요소의 개수 ▪▪
+[문제](https://www.acmicpc.net/problem/11724) ▪▪ [풀이](/dfsbfs/connectedcomponent.py)
+	
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
 * 타겟 넘버 ▪▪
