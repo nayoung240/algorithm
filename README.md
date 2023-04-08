@@ -1,8 +1,49 @@
 # algorithm 문제 모음
 
-## 스택/큐
+## ✨순열
+- permutations(): 하나의 리스트에서 모든 조합 계산(순서포함)
+```
+from itertools import permutations
+a = list(permutations(arr, 2))
+```
 
-<details><summary><b>👀문제풀이</b></summary>
+## ✨조합
+- combinations(): 하나의 리스트에서 모든 조합 계산 (순서 상관 없이)
+```
+from itertools import combinations
+
+a = combinations([2,1,3], 2)
+print(list(a)) # [(2,1),(2,3),(1,3)]
+```
+
+- product(): 두개 이상의 리스트에서 모든 조합 계산
+```
+from itertools import product
+
+a = product(*arr)
+b = product(arr, repet=5)
+```
+
+<details><summary><h3>👀문제풀이</h3></summary>
+
+<img src="https://img.shields.io/badge/leetcode-green"/>
+
+* Letter Combinations of a Phone Number ▪▪
+[문제](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)  ▪▪ [풀이](/pandc/phonenumbercombination.py)
+
+<img src="https://img.shields.io/badge/programmers-blue"/>
+
+* 완전탐색 > 소수 찾기 ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/42839)  ▪▪ [풀이](/pandc/findprimenumber.py)
+
+
+
+</details><br>
+
+
+## ✨스택/큐
+
+<details><summary><h3>👀문제풀이</h3></summary>
 
 * 스택 수열 ▪▪
 [문제](https://www.acmicpc.net/problem/1874) ▪▪ [풀이](/stackandqueue/stacknumber.py)
@@ -96,7 +137,7 @@ result = heapsort([1,3,5,7,9,2,4,6,8,0])
 print(result)
 ```
 
-<details><summary><b>👀문제풀이</b></summary>
+<details><summary><h3>👀문제풀이</h3></summary>
 
 <img src="https://img.shields.io/badge/leetcode-green"/>
 
@@ -106,8 +147,6 @@ print(result)
 [문제](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/) ▪▪ [풀이](/heapandhash/kthsmallest.py)
 * Group Anagrams ▪▪
 [문제](https://leetcode.com/problems/group-anagrams/description/) ▪▪ [풀이](/heapandhash/groupanagram.py)
-* Letter Combinations of a Phone Number ▪▪
-[문제](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)  ▪▪ [풀이](/heapandhash/phonenumbercombination.py)
 * Determine if Two Strings Are Close ▪▪
 [문제](https://leetcode.com/problems/determine-if-two-strings-are-close/description/)  ▪▪ [풀이](/heapandhash/closestring.py)
 
@@ -168,7 +207,7 @@ for i in range(len(array)):
     array[i], array[min_index] = array[min_index], array[i] # swap
 ```
 
-<details><summary><b>👀문제풀이</b></summary>
+<details><summary><h3>👀문제풀이</h3></summary>
 
 * 정렬 > 소트인사이드 ▪▪
 [문제](https://www.acmicpc.net/problem/1427) ▪▪ [풀이](/sort/sortinside.py)
@@ -204,7 +243,7 @@ for i in range(4):
 	ny = y + dy[i]	
 ```
 
-<details><summary><b>👀문제풀이</b></summary>
+<details><summary><h3>👀문제풀이</h3></summary>
 
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
@@ -278,7 +317,7 @@ print(count_by_range(a,-1,3)) # 값이 -1 ~ 3인 개수 -> 6
 ```
 
 
-<details><summary><b>👀문제풀이</b></summary>
+<details><summary><h3>👀문제풀이</h3></summary>
 
 * 예산 ▪▪
 [문제](https://www.acmicpc.net/problem/2512) ▪▪ [풀이](/binary/budget.py)
@@ -298,7 +337,7 @@ print(count_by_range(a,-1,3)) # 값이 -1 ~ 3인 개수 -> 6
 
 : 그때 그때 상황에서 최적해가 전체 최적해가 된다는 원리
 
-<details><summary><b>👀문제풀이</b></summary>
+<details><summary><h3>👀문제풀이</h3></summary>
 
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
@@ -329,7 +368,7 @@ print(count_by_range(a,-1,3)) # 값이 -1 ~ 3인 개수 -> 6
 - 조건이 여러개인 경우에는 2차원 배열을 선언한다
 - ex) 구간을 구하는 문제는 A[i]를 끝점으로 하는 수열의 최장거리 또는 A[i]를 시작으로 하는 수열의 최장 길이로 선언한다.
 
-<details><summary><b>👀문제풀이</b></summary>
+<details><summary><h3>👀문제풀이</h3></summary>
 
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
@@ -844,7 +883,7 @@ def solution(maps):
 5. 인접 정점이 기 방문 상태이며 parent가 현재 정점 값이 아니라면 순환 있음으로 결과값 반환
 
 
-<details><summary><b>👀문제풀이</b></summary>
+<details><summary><h3>👀문제풀이</h3></summary>
 
 * DFS와 BFS ▪▪
 [문제](https://www.acmicpc.net/problem/1260) ▪▪ [풀이](/dfsbfs/dfsbfs.py)
@@ -884,7 +923,7 @@ def solution(maps):
 5. end 포인터가 배열의 범위를 벗어나면 start++
 ```
 
-<details><summary><b>👀문제풀이</b></summary>
+<details><summary><h3>👀문제풀이</h3></summary>
 
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
@@ -895,7 +934,7 @@ def solution(maps):
 
 ## ✨기타
 
-<details><summary><b>👀문제풀이</b></summary>
+<details><summary><h3>👀문제풀이</h3></summary>
 
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
@@ -920,7 +959,7 @@ def solution(maps):
 
 ## ✨성능
 
-<details><summary><b>👀문제풀이</b></summary>
+<details><summary><h3>👀문제풀이</h3></summary>
 
 <img src="https://img.shields.io/badge/codility-orange"/>
 
@@ -1026,30 +1065,19 @@ import math
 math.ceil(number) # 올림
 ```
 
-
-## ✨순열
-- permutations(): 하나의 리스트에서 모든 조합 계산(순서포함)
+## ✨소수 체크
 ```
-from itertools import permutations
-a = list(permutations(arr, 2))
-```
-
-## ✨조합
-- combinations(): 하나의 리스트에서 모든 조합 계산 (순서 상관 없이)
-```
-from itertools import combinations
-
-a = combinations([2,1,3], 2)
-print(list(a)) # [(2,1),(2,3),(1,3)]
+def checkPrime(n):
+    if n < 2:                                 
+        return False
+    
+    for i in range(2, n):
+        if n % i == 0:
+            return False # i로 나누어 떨어지면 소수가 아니다
+    
+    return True
 ```
 
-- product(): 두개 이상의 리스트에서 모든 조합 계산
-```
-from itertools import product
-
-a = product(*arr)
-b = product(arr, repet=5)
-```
 
 ## ✨피보나치 수열
 ```
