@@ -1071,7 +1071,7 @@ def checkPrime(n):
     if n < 2:                                 
         return False
     
-    for i in range(2, n):
+    for i in range(2, int(n**0.5)+1):
         if n % i == 0:
             return False # i로 나누어 떨어지면 소수가 아니다
     
