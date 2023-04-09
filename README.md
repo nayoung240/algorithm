@@ -1049,7 +1049,6 @@ result2 = list(map(lambda x: x * 2, [5, 4, 3, 2, 1]))
 - 시간 복잡도: O(N)
   - for문을 통해서 count하면 시간복잡도가 O(N**2) 이지만 counter는 count를 n번 하는 것이라 빠르다.
 
-
 ```
 from collections import Counter
 answer = Counter(p) - Counter(c)
@@ -1367,6 +1366,7 @@ arr.insert(0, tmp)
 ```
 
 ### deque
+- popleft(), pop(), appendleft(x), append(x)
 - popleft() 필요할 때 효율성 높음
 ```
 from collections import deque 
