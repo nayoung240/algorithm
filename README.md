@@ -24,7 +24,7 @@ a = product(*arr)
 b = product(arr, repet=5)
 ```
 
-<details><summary><h3>👀문제풀이</h3></summary>
+<details><summary><h3>👀⚡문제풀이</h3></summary>
 
 <img src="https://img.shields.io/badge/leetcode-green"/>
 
@@ -43,7 +43,7 @@ b = product(arr, repet=5)
 
 ## ✨스택/큐
 
-<details><summary><h3>👀문제풀이</h3></summary>
+<details><summary><h3>👀⚡문제풀이</h3></summary>
 
 * 스택 수열 ▪▪
 [문제](https://www.acmicpc.net/problem/1874) ▪▪ [풀이](/stackandqueue/stacknumber.py)
@@ -137,7 +137,7 @@ result = heapsort([1,3,5,7,9,2,4,6,8,0])
 print(result)
 ```
 
-<details><summary><h3>👀문제풀이</h3></summary>
+<details><summary><h3>👀⚡문제풀이</h3></summary>
 
 <img src="https://img.shields.io/badge/leetcode-green"/>
 
@@ -207,7 +207,7 @@ for i in range(len(array)):
     array[i], array[min_index] = array[min_index], array[i] # swap
 ```
 
-<details><summary><h3>👀문제풀이</h3></summary>
+<details><summary><h3>👀⚡문제풀이</h3></summary>
 
 * 정렬 > 소트인사이드 ▪▪
 [문제](https://www.acmicpc.net/problem/1427) ▪▪ [풀이](/sort/sortinside.py)
@@ -243,7 +243,7 @@ for i in range(4):
 	ny = y + dy[i]	
 ```
 
-<details><summary><h3>👀문제풀이</h3></summary>
+<details><summary><h3>👀⚡문제풀이</h3></summary>
 
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
@@ -317,7 +317,7 @@ print(count_by_range(a,-1,3)) # 값이 -1 ~ 3인 개수 -> 6
 ```
 
 
-<details><summary><h3>👀문제풀이</h3></summary>
+<details><summary><h3>👀⚡문제풀이</h3></summary>
 
 * 예산 ▪▪
 [문제](https://www.acmicpc.net/problem/2512) ▪▪ [풀이](/binary/budget.py)
@@ -337,7 +337,7 @@ print(count_by_range(a,-1,3)) # 값이 -1 ~ 3인 개수 -> 6
 
 : 그때 그때 상황에서 최적해가 전체 최적해가 된다는 원리
 
-<details><summary><h3>👀문제풀이</h3></summary>
+<details><summary><h3>👀⚡문제풀이</h3></summary>
 
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
@@ -368,7 +368,7 @@ print(count_by_range(a,-1,3)) # 값이 -1 ~ 3인 개수 -> 6
 - 조건이 여러개인 경우에는 2차원 배열을 선언한다
 - ex) 구간을 구하는 문제는 A[i]를 끝점으로 하는 수열의 최장거리 또는 A[i]를 시작으로 하는 수열의 최장 길이로 선언한다.
 
-<details><summary><h3>👀문제풀이</h3></summary>
+<details><summary><h3>👀⚡문제풀이</h3></summary>
 
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
@@ -883,7 +883,7 @@ def solution(maps):
 5. 인접 정점이 기 방문 상태이며 parent가 현재 정점 값이 아니라면 순환 있음으로 결과값 반환
 
 
-<details><summary><h3>👀문제풀이</h3></summary>
+<details><summary><h3>👀⚡문제풀이</h3></summary>
 
 * DFS와 BFS ▪▪
 [문제](https://www.acmicpc.net/problem/1260) ▪▪ [풀이](/dfsbfs/dfsbfs.py)
@@ -926,7 +926,7 @@ def solution(maps):
 5. end 포인터가 배열의 범위를 벗어나면 start++
 ```
 
-<details><summary><h3>👀문제풀이</h3></summary>
+<details><summary><h3>👀⚡문제풀이</h3></summary>
 
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
@@ -937,7 +937,7 @@ def solution(maps):
 
 ## ✨기타
 
-<details><summary><h3>👀문제풀이</h3></summary>
+<details><summary><h3>👀⚡문제풀이</h3></summary>
 
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
@@ -962,7 +962,7 @@ def solution(maps):
 
 ## ✨성능
 
-<details><summary><h3>👀문제풀이</h3></summary>
+<details><summary><h3>👀⚡문제풀이</h3></summary>
 
 <img src="https://img.shields.io/badge/codility-orange"/>
 
