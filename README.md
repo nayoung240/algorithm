@@ -43,6 +43,26 @@ b = product(arr, repet=5)
 
 ## ✨스택/큐
 
+### deque
+- popleft(), pop(), appendleft(x), append(x)
+- popleft() 필요할 때 효율성 높음
+```
+from collections import deque 
+workday = deque()
+```
+
+### for문 돌면서 popleft하게되면 에러가 발생한다.
+```
+import copy
+for i in copy.deepcopy(workday):
+```
+
+### 리스트 맨앞에 요소 추가하기 - insert( )
+```
+arr.insert(0, tmp)
+```
+
+
 <details><summary><h3>👀⚡문제풀이</h3></summary>
 
 * 스택 수열 ▪▪
@@ -1355,25 +1375,6 @@ sum(matrix,[])
 ### 여러 그룹의 데이터를 루프를 한 번만 돌면서 병렬 처리 가능 (묶기)
 ```
 zip([1,2,3],['a','b','c']) # (1,'a'),(2,'b'),(3,'c')
-```
-
-### for문 돌면서 popleft하게되면 에러가 발생한다.
-```
-import copy
-for i in copy.deepcopy(workday):
-```
-
-### 리스트 맨앞에 요소 추가하기 - insert( )
-```
-arr.insert(0, tmp)
-```
-
-### deque
-- popleft(), pop(), appendleft(x), append(x)
-- popleft() 필요할 때 효율성 높음
-```
-from collections import deque 
-workday = deque()
 ```
 
 ### defaultdict(int) 를 사용하면 if 미리 존재하는지 체크안해도 된다.
