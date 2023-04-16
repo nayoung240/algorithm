@@ -169,7 +169,8 @@ print(result)
 [문제](https://leetcode.com/problems/group-anagrams/description/) ▪▪ [풀이](/heapandhash/groupanagram.py)
 * Determine if Two Strings Are Close ▪▪
 [문제](https://leetcode.com/problems/determine-if-two-strings-are-close/description/)  ▪▪ [풀이](/heapandhash/closestring.py)
-
+* Minimum Index Sum of Two Lists ▪▪
+[문제](https://leetcode.com/problems/minimum-index-sum-of-two-lists/description/)  ▪▪ [풀이](/heapandhash/minindexsum.py)
     
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
@@ -189,22 +190,6 @@ print(result)
 ### 중복제거&정렬하기
 ```
 sorted(set(nums), reverse=True)
-```
-
-### lamda 인자 : 표현식 
-- key인자에 정렬해줄 값을 넘겨주면 정렬된다 
-
-### list[1]을 기준으로 정렬
-```
-sorted(a, key = lambda x : x[1]) # [(3, 0), (5, 1), (0, 1), (1, 2), (5, 2)]
-```
-### 문자열 길이를 기준으로 정렬
-```
-sorted(list, key=lambda x : len(x)) # ['is', 'my', 'name', 'song']
-```
-### 제일 큰 수 만들기
-```
-list.sort(key=lambda x:str(x)*3, reverse=True)
 ```
 
 ### ✨정렬 알고리즘
@@ -1040,18 +1025,14 @@ n = list(map(int, sys.stdin.readline().split()))
 ```
 
 ## ✨map(function, iterable)
-- 리스트의 모든 원소에 각각 특정 함수를 적용할 때 사용한다.
+: 반복가능한 iterable객체를 받아서, 각 요소에 함수를 적용해주는 함수 
+- 리스트의 모든 원소에 각각 특정 함수를 적용할 때 사용
+- for문으로 해도되지만, 같은 연산을 더 쉽게, 그리고 메모리도 절약할 수 있다.
+- 람다함수 (익명함수)
+	- lambda 매개변수 : 결과 
+	- sorted 함수의 경우 key인자에 정렬해줄 값을 넘겨주면 정렬된다 
 
-### map을 사용하지 않으면 for문으로 번거로움
-```
-myList = [1, 2, 3, 4, 5]
-
-# for 반복문 이용
-result1 = []
-for val in myList:
-    result1.append(val + 1)
-```
-### map을 사용할 때
+### map을 사용하지 않으면 for문으로 번거로움 -> map을 사용할 때
 ```
 myList = [1, 2, 3, 4, 5]
 
@@ -1064,6 +1045,36 @@ result2 = list(map(add_one, myList))  # map반환을 list 로 변환
 ### map, lamda 함수(이름없는 함수) 이용
 ```
 result2 = list(map(lambda x: x * 2, [5, 4, 3, 2, 1]))
+```
+### 리스트 안에 값을을 str타입으로 변경하기
+```
+map(str, target)
+```
+### list[1]을 기준으로 정렬
+```
+sorted(a, key = lambda x : x[1]) # [(3, 0), (5, 1), (0, 1), (1, 2), (5, 2)]
+```
+### 문자열 길이를 기준으로 정렬
+```
+sorted(list, key=lambda x : len(x)) # ['is', 'my', 'name', 'song']
+```
+### 제일 큰 수 만들기
+```
+list.sort(key=lambda x:str(x)*3, reverse=True)
+```
+
+## ✨filter
+: 특정 조건으로 걸러서 걸러진 요소들로 iterator객체를 만들어서 리턴
+- map함수와 사용 방법은 동일하나, 함수의 결과가 참인지 거짓인지에 따라, 해당 요소를 포함할지를 결정
+
+### 특정 값만 일치하면 filter
+```
+list(filter(lambda x : idx[x] == 5, idx))
+```
+
+### 짝수만 filter
+```
+list(filter(lambda x : x%2==0, target))
 ```
 
 ## ✨counter()
