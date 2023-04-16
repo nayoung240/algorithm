@@ -1113,6 +1113,20 @@ def checkPrime(n):
 
 
 ## ✨피보나치 수열
+- 1) for문
+```
+def fibonacci(n):
+	if n == 1 or n == 2:
+		return 1
+
+	a, b = 1, 1
+	
+	for i in range(1, n):
+		a, b = b, a+b
+
+	return a
+```
+- 2) 재귀 
 ```
 def fibonacci(a):
     if a < 2:
