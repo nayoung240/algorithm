@@ -19,3 +19,16 @@ class Solution:
                     answer += 1
 
         return answer
+   
+'''
+기막힌 2줄짜리 파이썬 닶
+
+- zip(*args)를 해주면 이차원리스트를 열끼리 묶어준다.
+'''
+class Solution:
+    def equalPairs(self, grid: List[List[int]]) -> int:
+        freq = Counter(tuple(row) for row in grid)      
+        return sum(freq[tuple(col)] for col in zip(*grid))
+
+    
+    
