@@ -171,7 +171,9 @@ print(result)
 [문제](https://leetcode.com/problems/determine-if-two-strings-are-close/description/)  ▪▪ [풀이](/heapandhash/closestring.py)
 * Minimum Index Sum of Two Lists ▪▪
 [문제](https://leetcode.com/problems/minimum-index-sum-of-two-lists/description/)  ▪▪ [풀이](/heapandhash/minindexsum.py)
-    
+* Sort Characters By Frequency ▪▪
+[문제](https://leetcode.com/problems/sort-characters-by-frequency/description/)  ▪▪ [풀이](/heapandhash/frequencysort.py)
+	
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
 * 해시 > 완주하지 못한 선수 ▪▪
@@ -1087,10 +1089,9 @@ list(filter(lambda x : x%2==0, target))
   - for문을 통해서 count하면 시간복잡도가 O(N**2) 이지만 counter는 count를 n번 하는 것이라 빠르다.
 
 ```
-from collections import Counter
-answer = Counter(p) - Counter(c)
-answer = set(Counter(p)) - set(Counter(c))
-answer = Counter(Counter(p).values()) - Counter(Counter(c).values())
+answer = collections.Counter(p) - collections.Counter(c)
+answer = set(collections.Counter(p)) - set(collections.Counter(c))
+answer = collections.Counter(collections.Counter(p).values()) - collections.Counter(collections.Counter(c).values())
 ```
 
 ## ✨소수점
