@@ -923,6 +923,10 @@ def solution(maps):
 
 * Numbers With Same Consecutive Differences ▪▪
 [문제](https://leetcode.com/problems/numbers-with-same-consecutive-differences/) ▪▪ [풀이](/dfsbfs/samediffnum.py)
+	
+* 그래프 > 가장 먼 노드 ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/49189?language=python3) ▪▪ [풀이](/dfsbfs/farthestnode.py)	
+	
 
 </details><br>
 
