@@ -233,7 +233,7 @@ for i in range(len(array)):
 
 </details><br>
 
-## ✨완전 탐색
+## ✨완전 탐색 Bruteforce
 
 ### 방향벡터
 ```
@@ -259,6 +259,11 @@ for i in range(4):
 * 2023 KAKAO BLIND RECRUITMENT > 이모티콘 할인행사 ▪▪
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/150368) ▪▪ [풀이](/bruteforce/emoticonsale.py)
 
+<img src="https://img.shields.io/badge/leetcode-green"/>
+	
+* Palindromic Substrings ▪▪
+[문제](https://leetcode.com/problems/palindromic-substrings/description/) ▪▪ [풀이](/bruteforce/palindromicstr.py)	
+	
 </details><br>
 
 ## 이분 탐색, 이진 탐색, Binary Search
@@ -1458,12 +1463,17 @@ for text in re.finditer('1', binaryNum):
     now = text.start()
 ```
 
-### for문 거꾸로 출력하기
+### 리스트 거꾸로 출력하기 (for문)
 ```
 st = [1, 2, 3, 4, 5]
 
 for f in range(len(st)-1, -1, -1):
   print(st[f]) # 5, 4, 3,,,
+```
+
+### 문자열 거꾸로 출력하기
+```
+word[::-1]
 ```
 
 ### index 함수 try catch 예외처리
