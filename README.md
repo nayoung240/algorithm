@@ -952,6 +952,12 @@ def solution(maps):
 * 2020 카카오 인턴십 > 보석 쇼핑 ▪▪
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/67258) ▪▪ [풀이](/pointer/gemshop.py)
 
+<img src="https://img.shields.io/badge/leetcode-green"/>
+
+* Longest Substring Without Repeating Characters ▪▪
+[문제](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) ▪▪ [풀이](/pointer/longestsubstr.py)
+	
+
 </details><br>
 
 ## ✨기타
