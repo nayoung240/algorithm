@@ -413,7 +413,8 @@ print(count_by_range(a,-1,3)) # 값이 -1 ~ 3인 개수 -> 6
 [문제](https://leetcode.com/problems/count-number-of-teams/description/) ▪▪ [풀이](/dp/countteams.py)
 * Count Square Submatrices with All Ones ▪▪
 [문제](https://leetcode.com/problems/count-square-submatrices-with-all-ones/description/) ▪▪ [풀이](/dp/countsquare.py)	
-
+* Longest Palindromic Substring ▪▪
+[문제](https://leetcode.com/problems/longest-palindromic-substring/description/) ▪▪ [풀이](/dp/longestpalindrom.py)	
 
 <img src="https://img.shields.io/badge/codility-orange"/>
 
