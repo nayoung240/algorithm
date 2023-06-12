@@ -113,6 +113,29 @@ arr.insert(0, tmp)
 - 두 자식 중 더 큰 자식과 자신의 위치를 바꾸는 알고리즘
 - 최악은 O(logN)
 
+### 힙 삭제, 추가
+```
+import heapq
+
+h = []
+heappush(h, 4)
+heappush(h, 1)
+heappush(h, 3) 
+print(h) # [1,3,4]
+
+heappop(h)
+print(h) # [3,4]
+```
+
+### 리스트를 힙으로 변환
+```
+import heapq
+
+heap = [4, 1, 7, 3, 8, 5]
+heapify(heap)
+print(heap) # [1,3,4,5,7,8]
+```
+
 ### 최소힙 (오름차순 정렬)
 : 부모노드의 값이 자식노드의 값보다 항상 작다.
 ```
@@ -142,14 +165,14 @@ print(result)
 import heapq
 
 def heapsort(iterable):
-    r = []
+    h = []
     result = []
 
     for value in iterable:
-        heapq.heappush(r,-value)
+        heapq.heappush(h,-value)
     
-    for _ in range(len(r)):
-        result.append(-heapq.heappop(r))
+    while h:
+        result.append(-heapq.heappop(h))
 
     return result
 
