@@ -196,7 +196,9 @@ print(result)
 [문제](https://leetcode.com/problems/minimum-index-sum-of-two-lists/description/)  ▪▪ [풀이](/heapandhash/minindexsum.py)
 * Sort Characters By Frequency ▪▪
 [문제](https://leetcode.com/problems/sort-characters-by-frequency/description/)  ▪▪ [풀이](/heapandhash/frequencysort.py)
-	
+* Find K Pairs with Smallest Sums ▪▪
+[문제](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/)  ▪▪ [풀이](/heapandhash/smallestsums.py)
+
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
 * 해시 > 완주하지 못한 선수 ▪▪
