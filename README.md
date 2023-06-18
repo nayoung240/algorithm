@@ -1524,13 +1524,18 @@ except ValueError:
 ```
 
 ### 약수 구하기
-- 제곱근을 사용해서 범위를 좁혀야 효율적이다.
+- 그냥 for문하면 O(n) 이지만 제곱근을 사용해서 범위를 좁히면 O(n^(1/2)) 으로 효율적이다.
 
 ```
-for i in range(1, int(N ** (1 / 2)) + 1):
-    if N % i == 0:
-        data.add(i)
-        data.add(N // i)
+arr = set()
+
+for i in range(1, int(n ** (1 / 2)) + 1):
+    if n % i == 0:
+        arr.add(i)
+        arr.add(n // i)
+
+arr = list(arr)
+arr.sort()
 ```
 
 ### 시간 복잡도 관련 Tip
