@@ -367,7 +367,7 @@ print(count_by_range(a,-1,3)) # 값이 -1 ~ 3인 개수 -> 6
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/60060?language=python3) ▪▪ [풀이](/binary/searchlycies.py)
 * 징검다리 ▪▪
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/43236?language=python3) ▪▪ [풀이](/binary/steppingstone.py)
-* 징검다리 건너기 ▪▪
+* 2019 카카오 개발자 겨울 인턴십 > 징검다리 건너기 ▪▪
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/64062?language=python3) ▪▪ [풀이](/binary/steppingstone2.py)
 
 </details><br>
