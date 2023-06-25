@@ -36,24 +36,27 @@ def solution(stones, k):
 '''
 => 이분탐색 => But 뭐를 기준으로 이분탐색해야할까?
 '''
-def solution2(stones, k):
-    start = 1
-    end = max(stones) # stone의 최대값을 max로 둔다.
+def solution(stones, k):
+    left = 1
+    right = max(stones)
+    res = 1
+    
+    while left <= right:
+        mid = (left + right) // 2  # 건너는 친구 수 
+        cnt = 0  
 
-    while start <= end:
-        cnt = 0
-        mid = (start + end) // 2
-        
+        # mid명 건넌다고 가정했을 때 연속 점프수 -> k 초과 시 건너기 불가능하다고 판단하고 break
         for stone in stones:
-            if (stone - mid) <= 0:
+            if stone - mid < 0:
                 cnt += 1
-        
+                
                 if cnt >= k:
-                    end = mid - 1
+                    right = mid - 1  # 건널 수 없음 -> 건널 사람 줄이기
                     break
             else:
-                cnt = 0
-        else:
-            start = mid + 1
-            
-    return start
+                cnt = 0        
+        else:  # break없이 loop 무사 탈출 -> mid명 건널 수 있음 -> 건널 사람 늘리기
+            res = mid
+            left = mid + 1
+
+    return res
