@@ -993,6 +993,18 @@ def solution(maps):
 
 </details><br>
 
+## ✨수학
+
+### 피타고라스의 정리
+- 양변의 제곱의 합 = 빗변의 제곱의 합
+  
+<details><summary><h3>👀⚡문제풀이</h3></summary>
+	
+<img src="https://img.shields.io/badge/leetcode-green"/>
+
+* Count Lattice Points Inside a Circle ▪▪
+[문제](https://leetcode.com/problems/count-lattice-points-inside-a-circle/description/) ▪▪ [풀이](/math/circlelatticepoints.py)
+
 ## ✨기타
 
 <details><summary><h3>👀⚡문제풀이</h3></summary>
