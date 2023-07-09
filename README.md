@@ -1005,6 +1005,8 @@ def solution(maps):
 * Count Lattice Points Inside a Circle ▪▪
 [문제](https://leetcode.com/problems/count-lattice-points-inside-a-circle/description/) ▪▪ [풀이](/math/circlelatticepoints.py)
 
+</details><br>
+
 ## ✨기타
 
 <details><summary><h3>👀⚡문제풀이</h3></summary>
