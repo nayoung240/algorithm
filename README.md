@@ -317,12 +317,11 @@ while left <= right:
 return -1 #찾지 못했을 때
 ```
 
-### 
-left(a, x)
-- 정렬된 a에 x를 삽입할 위치를 리턴한다.
+### bisect_left(list, x)
+- 정렬된 list에 x를 삽입할 위치를 리턴한다.
 - x가 이미 있으면 x위치의 앞 위치를 리턴한다.
 
-### bisect_right(a, x)
+### bisect_right(list, x)
 - x가 이미 있으면 x위치의 뒤 위치를 반환한다.
 
 => 값이 없을 때는 같은 값 리턴
@@ -353,8 +352,12 @@ print(count_by_range(a,4,4)) # 값이 4인 개수 -> 2
 print(count_by_range(a,-1,3)) # 값이 -1 ~ 3인 개수 -> 6
 ```
 
-
 <details><summary><h3>👀⚡문제풀이</h3></summary>
+
+<img src="https://img.shields.io/badge/leetcode-green"/>
+
+* Number of Flowers in Full Bloom ▪▪
+[문제](https://leetcode.com/problems/number-of-flowers-in-full-bloom/description/) ▪▪ [풀이](/binary/bloomflowers.py)
 
 * 예산 ▪▪
 [문제](https://www.acmicpc.net/problem/2512) ▪▪ [풀이](/binary/budget.py)
