@@ -198,6 +198,11 @@ print(result)
 [문제](https://leetcode.com/problems/sort-characters-by-frequency/description/)  ▪▪ [풀이](/heapandhash/frequencysort.py)
 * Find K Pairs with Smallest Sums ▪▪
 [문제](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/)  ▪▪ [풀이](/heapandhash/smallestsums.py)
+* Minimum Consecutive Cards to Pick Up ▪▪
+[문제](https://leetcode.com/problems/minimum-consecutive-cards-to-pick-up/description/)  ▪▪ [풀이](/heapandhash/minimumcardpickup.py)
+* K Divisible Elements Subarrays ▪▪
+[문제](https://leetcode.com/problems/k-divisible-elements-subarrays/description/)  ▪▪ [풀이](/heapandhash/countdistinct.py)
+
 
 <img src="https://img.shields.io/badge/programmers-blue"/>
 
@@ -1503,6 +1508,21 @@ print(*answer, sep='\n')
 ### 숫자 리스트를 문자열로 변환하기
 ```
 ''.join(map(str,리스트))
+```
+
+### 배열 중복되지 않게 저장되도록 하기
+- tuple로 추가해서 중복 인입되지 않도록 할 수 있다.
+```
+s = set()
+a = [1,2,4]
+b = [2,2,5]
+c = [1,2,4]
+
+s.add(tuple(a))
+s.add(tuple(b))
+s.add(tuple(c))
+
+print(list(s)) # [(2,2,5)]
 ```
 
 ### 윤년은 2월이 29일이다.
