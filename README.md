@@ -490,7 +490,8 @@ mincostclimbing.py
 - 재귀를 많이 호출하는 문제는 제한횟수에 걸려서 런타임 에러가 발생할 수도 있다.
 - 아래 제한 설정을 늘려준다.
 ```
-import sys sys.setrecursionlimit(100000)
+import sys
+sys.setrecursionlimit(100000)
 ```
 
 ### 인접행렬 스택으로 구현 1)
@@ -963,6 +964,8 @@ def solution(maps):
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/43165?language=python3) ▪▪ [풀이](/dfsbfs/targetnumber.py)
 * 게임 맵 최단거리 ▪▪
 [문제](https://school.programmers.co.kr/learn/courses/30/lessons/1844?language=python3) ▪▪ [풀이](/dfsbfs/gamemap.py)
+* 무인도 여행 ▪▪
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/154540) ▪▪ [풀이](/dfsbfs/uninhabitedisland.py)
 
 <img src="https://img.shields.io/badge/leetcode-green"/>
 
