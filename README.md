@@ -261,6 +261,11 @@ for i in range(len(array)):
 * triangle ▪▪
 [문제](https://app.codility.com/programmers/lessons/6-sorting/triangle/start/) ▪▪ [풀이](/sort/triangle.py)
 
+<img src="https://img.shields.io/badge/leetcode-green"/>
+	
+* Maximum Consecutive Floors Without Special Floors ▪▪
+[문제](https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/description/) ▪▪ [풀이](/sort/maxconsecutive.py)	
+
 </details><br>
 
 ## ✨완전 탐색 Bruteforce
@@ -1013,13 +1018,22 @@ def solution(maps):
 
 ### 피타고라스의 정리
 - 양변의 제곱의 합 = 빗변의 제곱의 합
-  
+
+### 비트 연산
+- a&b : 둘 다 참일 경우 1
+- a|b : 둘 중 하나만 참일 경우 1
+- a^b : 둘 중 하나만 참이어도 1
+- b<<2 : 왼쪽 쉬프트 연산
+
 <details><summary><h3>👀⚡문제풀이</h3></summary>
 	
 <img src="https://img.shields.io/badge/leetcode-green"/>
 
 * Count Lattice Points Inside a Circle ▪▪
 [문제](https://leetcode.com/problems/count-lattice-points-inside-a-circle/description/) ▪▪ [풀이](/math/circlelatticepoints.py)
+* Largest Combination With Bitwise AND Greater Than Zero ▪▪
+[문제](https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/description/) ▪▪ [풀이](/math/largestcombination.py)
+
 
 </details><br>
 
