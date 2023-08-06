@@ -265,6 +265,9 @@ for i in range(len(array)):
 	
 * Maximum Consecutive Floors Without Special Floors ▪▪
 [문제](https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/description/) ▪▪ [풀이](/sort/maxconsecutive.py)	
+* Maximum Bags With Full Capacity of Rocks ▪▪
+[문제](https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/description/) ▪▪ [풀이](/sort/maximumbags.py)	
+
 
 </details><br>
 
@@ -1019,6 +1022,12 @@ def solution(maps):
 ### 피타고라스의 정리
 - 양변의 제곱의 합 = 빗변의 제곱의 합
 
+### 기울기 공식
+- x1 - x0 / y1 - y0
+- 세 점이 같은 기울기를 가지고 있는지 확인 (부동소수점 이슈때문에 곱하기를 사용할 것)
+  - (x1 - x0) / (y1 - y0) == (x2 - x1) / (y2 - y1) - This will result in floating points which is not desirable for comparison.
+  - (x1 - x0) * (y2 - y1) == (x2 - x1) * (y1 - y0) - Avoid floating points using multiplication.
+
 ### 비트 연산
 - a&b : 둘 다 참일 경우 1
 - a|b : 둘 중 하나만 참일 경우 1
@@ -1033,6 +1042,8 @@ def solution(maps):
 [문제](https://leetcode.com/problems/count-lattice-points-inside-a-circle/description/) ▪▪ [풀이](/math/circlelatticepoints.py)
 * Largest Combination With Bitwise AND Greater Than Zero ▪▪
 [문제](https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/description/) ▪▪ [풀이](/math/largestcombination.py)
+* Minimum Lines to Represent a Line Chart ▪▪
+[문제](https://leetcode.com/problems/minimum-lines-to-represent-a-line-chart/description/) ▪▪ [풀이](/math/minimumlines.py)
 
 
 </details><br>
@@ -1154,6 +1165,10 @@ sorted(a, key = lambda x : x[1]) # [(3, 0), (5, 1), (0, 1), (1, 2), (5, 2)]
 ### 문자열 길이를 기준으로 정렬
 ```
 sorted(list, key=lambda x : len(x)) # ['is', 'my', 'name', 'song']
+```
+### 차이가 작게 나는 순서대로 index 담기
+```
+sorted(range(len(a)), key=lambda i: abs(a[i] - b[i]))
 ```
 ### 제일 큰 수 만들기
 ```
