@@ -1533,6 +1533,9 @@ for j in strarr:
 ```
 print(*answer, sep='\n')
 ```
+```
+print(a, b, sep=" ") # a b
+``` 
 
 ### 튜플을 문자열로 변환하기
 ```
